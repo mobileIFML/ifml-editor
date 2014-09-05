@@ -329,4 +329,201 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SetContextEvent" eSuperTypes="#//Core/ThrowingEvent"/>
   </eSubpackages>
+  <eSubpackages name="Mobile" nsURI="http://www.omg.org/spec/20130218/mobile" nsPrefix="mobile">
+    <eClassifiers xsi:type="ecore:EClass" name="MobileViewContainer" abstract="true"
+        eSuperTypes="#//Core/ViewContainer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Screen" eSuperTypes="#//Mobile/MobileViewContainer">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isModal" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasNavBar" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileViewComponent" abstract="true"
+        eSuperTypes="#//Core/ViewComponent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SearchView" eSuperTypes="#//Mobile/MobileViewComponent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileViewElementEvent" abstract="true"
+        eSuperTypes="#//Core/ViewElementEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="TouchEvent" eSuperTypes="#//Mobile/MobileViewElementEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LongPressEvent" eSuperTypes="#//Mobile/TouchEvent">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="pressDuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="fingersCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PanEvent" eSuperTypes="#//Mobile/TouchEvent">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="fingersCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PinchEvent" eSuperTypes="#//Mobile/TouchEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SwipeEvent" eSuperTypes="#//Mobile/TouchEvent">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="swipeDirection" eType="#//Mobile/SwipeDirection"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="TapEvent" eSuperTypes="#//Mobile/TouchEvent"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="SwipeDirection">
+      <eLiterals name="right"/>
+      <eLiterals name="left"/>
+      <eLiterals name="up"/>
+      <eLiterals name="down"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="BatteryStatusDescription">
+      <eLiterals name="unplugged"/>
+      <eLiterals name="charging"/>
+      <eLiterals name="full"/>
+      <eLiterals name="unknown"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="OrientationDescription">
+      <eLiterals name="unkown"/>
+      <eLiterals name="portrait"/>
+      <eLiterals name="landscape"/>
+      <eLiterals name="portraitUpsideDown"/>
+      <eLiterals name="landscapeRight"/>
+      <eLiterals name="landscapeLeft"/>
+      <eLiterals name="faceUp"/>
+      <eLiterals name="faceDown"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileAction" abstract="true" eSuperTypes="#//Core/IFMLAction"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CameraAction" eSuperTypes="#//Mobile/MobileAction"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MicrophoneAction" eSuperTypes="#//Mobile/MobileAction"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileActionEvent" abstract="true"
+        eSuperTypes="#//Core/ActionEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CameraActionEvent" eSuperTypes="#//Mobile/CameraAction #//Mobile/MobileActionEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MicrophoneActionEvent" eSuperTypes="#//Mobile/MicrophoneAction #//Mobile/MobileActionEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileSystemEvent" abstract="true"
+        eSuperTypes="#//Core/SystemEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileResourceEvent" abstract="true"
+        eSuperTypes="#//Mobile/MobileSystemEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BatteryEvent" eSuperTypes="#//Mobile/MobileResourceEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConnectionEvent" eSuperTypes="#//Mobile/MobileResourceEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MemoryEvent" eSuperTypes="#//Mobile/MobileResourceEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileSensorEvent" abstract="true"
+        eSuperTypes="#//Mobile/MobileSystemEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AccelerometerEvent" eSuperTypes="#//Mobile/MobileSensorEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="GyroscopeEvent" eSuperTypes="#//Mobile/MobileSensorEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LocationEvent" eSuperTypes="#//Mobile/MobileSensorEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MagnetometerEvent" eSuperTypes="#//Mobile/MobileSensorEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MotionEvent" eSuperTypes="#//Mobile/MobileSensorEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="OrientationEvent" eSuperTypes="#//Mobile/MotionEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ProximityEvent" eSuperTypes="#//Mobile/MobileSensorEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RotateEvent" eSuperTypes="#//Mobile/TouchEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ShakeEvent" eSuperTypes="#//Mobile/MotionEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileDevice" eSuperTypes="#//Extensions/Device">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="screens" upperBound="-1"
+          eType="#//Mobile/MobileDeviceScreen"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sensors" upperBound="-1"
+          eType="#//Mobile/MobileDeviceSensor"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileDeviceScreen" eSuperTypes="#//Core/NamedElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="heigt" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="density" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileDeviceSensor" abstract="true"
+        eSuperTypes="#//Core/NamedElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Accelerometer" eSuperTypes="#//Mobile/MobileDeviceSensor"/>
+    <eClassifiers xsi:type="ecore:EClass" name="GPS" eSuperTypes="#//Mobile/MobileDeviceSensor">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isEnabled" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Gyroscope" eSuperTypes="#//Mobile/MobileDeviceSensor">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Magnetometer" eSuperTypes="#//Mobile/MobileDeviceSensor">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Microphone" eSuperTypes="#//Mobile/MobileDeviceSensor">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ProximitySensor" eSuperTypes="#//Mobile/MobileDeviceSensor">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="StillCamera" eSuperTypes="#//Mobile/MobileDeviceSensor">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="front" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rear" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="VideoCamera" eSuperTypes="#//Mobile/MobileDeviceSensor">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rear" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="front" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileContextVariable" abstract="true"
+        eSuperTypes="#//Core/SimpleContextVariable"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Acceleration" abstract="true" eSuperTypes="#//Mobile/MobileContextVariable">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AccelerationX" eSuperTypes="#//Mobile/Acceleration">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AccelerationY" eSuperTypes="#//Mobile/Acceleration">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AccelerationZ" eSuperTypes="#//Mobile/Acceleration">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Location" abstract="true" eSuperTypes="#//Mobile/MobileContextVariable"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Altitude" eSuperTypes="#//Mobile/Location">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="HorizontalAccuracy" eSuperTypes="#//Mobile/Location">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Latitude" eSuperTypes="#//Mobile/Location">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Longitude" eSuperTypes="#//Mobile/Location">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Speed" eSuperTypes="#//Mobile/Location">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="VerticalAccuracy" eSuperTypes="#//Mobile/Location">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Attitude" abstract="true" eSuperTypes="#//Mobile/MobileContextVariable">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Pitch" eSuperTypes="#//Mobile/Attitude">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Roll" eSuperTypes="#//Mobile/Attitude">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Yaw" eSuperTypes="#//Mobile/Attitude">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Battery" abstract="true" eSuperTypes="#//Mobile/MobileContextVariable"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BatteryLevel" eSuperTypes="#//Mobile/Battery">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="BatteryStatus" eSuperTypes="#//Mobile/Battery">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="#//Mobile/BatteryStatusDescription"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Network" abstract="true" eSuperTypes="#//Mobile/MobileContextVariable">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Bluetooth" eSuperTypes="#//Mobile/Network">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Cellular" eSuperTypes="#//Mobile/Network">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="WiFi" eSuperTypes="#//Mobile/Network">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Direction" abstract="true" eSuperTypes="#//Mobile/MobileContextVariable"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MagneticHeadingDirection" eSuperTypes="#//Mobile/Direction">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MagneticHeadingAccuracy" eSuperTypes="#//Mobile/Direction">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="TrueHeadingDirection" eSuperTypes="#//Mobile/Direction">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Rotation" abstract="true" eSuperTypes="#//Mobile/MobileContextVariable">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RotationX" eSuperTypes="#//Mobile/Rotation">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RotationY" eSuperTypes="#//Mobile/Rotation">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RotationZ" eSuperTypes="#//Mobile/Rotation">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+  </eSubpackages>
 </ecore:EPackage>
