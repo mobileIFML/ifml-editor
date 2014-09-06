@@ -423,7 +423,7 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Magnetometer" eSuperTypes="#//Mobile/MobileDeviceSensor">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Microphone" eSuperTypes="#//Mobile/MobileDeviceSensor">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
@@ -472,9 +472,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="VerticalAccuracy" eSuperTypes="#//Mobile/Location">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Attitude" abstract="true" eSuperTypes="#//Mobile/MobileContextVariable">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
-    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Attitude" abstract="true" eSuperTypes="#//Mobile/MobileContextVariable"/>
     <eClassifiers xsi:type="ecore:EClass" name="Pitch" eSuperTypes="#//Mobile/Attitude">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
     </eClassifiers>

@@ -10,7 +10,8 @@ Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: IFML.Core.presentation,
  IFML.DataTypes.presentation,
- IFML.Extensions.presentation
+ IFML.Extensions.presentation,
+ IFML.Mobile.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  IFMLEditor.edit;visibility:=reexport,

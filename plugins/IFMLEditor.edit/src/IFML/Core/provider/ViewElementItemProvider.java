@@ -6,24 +6,15 @@ package IFML.Core.provider;
 import IFML.Core.CoreFactory;
 import IFML.Core.CorePackage;
 import IFML.Core.ViewElement;
-
 import IFML.Extensions.ExtensionsFactory;
-
+import IFML.Mobile.MobileFactory;
 import java.util.Collection;
 import java.util.List;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
@@ -33,13 +24,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * @generated
  */
 public class ViewElementItemProvider
-	extends InteractionFlowElementItemProvider
-	implements
-		IEditingDomainItemProvider,
-		IStructuredItemContentProvider,
-		ITreeItemContentProvider,
-		IItemLabelProvider,
-		IItemPropertySource {
+	extends InteractionFlowElementItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -187,6 +172,41 @@ public class ViewElementItemProvider
 			(createChildParameter
 				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
 				 ExtensionsFactory.eINSTANCE.createOnSelectEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
+				 MobileFactory.eINSTANCE.createTouchEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
+				 MobileFactory.eINSTANCE.createLongPressEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
+				 MobileFactory.eINSTANCE.createPanEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
+				 MobileFactory.eINSTANCE.createPinchEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
+				 MobileFactory.eINSTANCE.createSwipeEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
+				 MobileFactory.eINSTANCE.createTapEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
+				 MobileFactory.eINSTANCE.createRotateEvent()));
 	}
 
 }

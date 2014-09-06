@@ -6,23 +6,14 @@ package IFML.Core.provider;
 import IFML.Core.CoreFactory;
 import IFML.Core.CorePackage;
 import IFML.Core.InteractionFlowModel;
-
 import IFML.Extensions.ExtensionsFactory;
-
+import IFML.Mobile.MobileFactory;
 import java.util.Collection;
 import java.util.List;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
@@ -32,13 +23,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * @generated
  */
 public class InteractionFlowModelItemProvider
-	extends NamedElementItemProvider
-	implements
-		IEditingDomainItemProvider,
-		IStructuredItemContentProvider,
-		ITreeItemContentProvider,
-		IItemLabelProvider,
-		IItemPropertySource {
+	extends NamedElementItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -373,6 +358,126 @@ public class InteractionFlowModelItemProvider
 			(createChildParameter
 				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
 				 ExtensionsFactory.eINSTANCE.createSetContextEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createScreen()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createSearchView()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createTouchEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createLongPressEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createPanEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createPinchEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createSwipeEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createTapEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createCameraAction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createMicrophoneAction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createCameraActionEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createMicrophoneActionEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createBatteryEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createConnectionEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createMemoryEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createAccelerometerEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createGyroscopeEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createLocationEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createMagnetometerEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createMotionEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createOrientationEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createProximityEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createRotateEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createShakeEvent()));
 	}
 
 	/**

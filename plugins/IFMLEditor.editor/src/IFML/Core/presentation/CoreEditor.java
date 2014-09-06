@@ -119,6 +119,7 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 import IFML.Core.provider.CoreItemProviderAdapterFactory;
 import IFML.DataTypes.presentation.IFMLMetamodelEditorPlugin;
 import IFML.Extensions.provider.ExtensionsItemProviderAdapterFactory;
+import IFML.Mobile.provider.MobileItemProviderAdapterFactory;
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 import org.eclipse.uml2.uml.edit.providers.UMLItemProviderAdapterFactory;
 
@@ -667,6 +668,7 @@ public class CoreEditor
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new CoreItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ExtensionsItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new MobileItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new EcoreItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new UMLItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());

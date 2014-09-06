@@ -25,6 +25,18 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated IFML-Metamodel -->
       <editor
+            id="IFML.Mobile.presentation.MobileEditorID"
+            name="%_UI_MobileEditor_label"
+            icon="icons/full/obj16/MobileModelFile.gif"
+            extensions="mobile"
+            class="IFML.Mobile.presentation.MobileEditor"
+            contributorClass="IFML.Mobile.presentation.MobileActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated IFML-Metamodel -->
+      <editor
             id="IFML.Core.presentation.CoreEditorID"
             name="%_UI_CoreEditor_label"
             icon="icons/full/obj16/CoreModelFile.gif"
@@ -50,6 +62,7 @@
       </wizard>
    </extension>
 
+null
    <extension point="org.eclipse.ui.editors">
       <!-- @generated IFML-Metamodel -->
       <editor
@@ -60,6 +73,22 @@
             class="IFML.Extensions.presentation.ExtensionsEditor"
             contributorClass="IFML.Extensions.presentation.ExtensionsActionBarContributor">
       </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated IFML-Metamodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="IFML.Mobile.presentation.MobileModelWizardID"
+            name="%_UI_MobileModelWizard_label"
+            class="IFML.Mobile.presentation.MobileModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MobileModelFile.gif">
+         <description>%_UI_MobileModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
    </extension>
 
 </plugin>

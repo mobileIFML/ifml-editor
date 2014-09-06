@@ -6,23 +6,14 @@ package IFML.Core.provider;
 import IFML.Core.Context;
 import IFML.Core.CoreFactory;
 import IFML.Core.CorePackage;
-
 import IFML.Extensions.ExtensionsFactory;
-
+import IFML.Mobile.MobileFactory;
 import java.util.Collection;
 import java.util.List;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
@@ -32,13 +23,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * @generated
  */
 public class ContextItemProvider
-	extends ElementItemProvider
-	implements
-		IEditingDomainItemProvider,
-		IStructuredItemContentProvider,
-		ITreeItemContentProvider,
-		IItemLabelProvider,
-		IItemPropertySource {
+	extends ElementItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -173,6 +158,11 @@ public class ContextItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_DIMENSIONS,
+				 MobileFactory.eINSTANCE.createMobileDevice()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
 				 CoreFactory.eINSTANCE.createContextVariable()));
 
@@ -185,6 +175,121 @@ public class ContextItemProvider
 			(createChildParameter
 				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
 				 CoreFactory.eINSTANCE.createDataContextVariable()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createAccelerationX()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createAccelerationY()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createAccelerationZ()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createAltitude()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createHorizontalAccuracy()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createLatitude()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createLongitude()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createSpeed()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createVerticalAccuracy()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createPitch()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createRoll()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createYaw()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createBatteryLevel()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createBatteryStatus()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createBluetooth()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createCellular()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createWiFi()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createMagneticHeadingDirection()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createMagneticHeadingAccuracy()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createTrueHeadingDirection()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createRotationX()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createRotationY()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.CONTEXT__CONTEXT_VARIABLES,
+				 MobileFactory.eINSTANCE.createRotationZ()));
 	}
 
 }

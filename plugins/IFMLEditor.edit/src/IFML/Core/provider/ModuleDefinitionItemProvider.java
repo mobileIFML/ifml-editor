@@ -6,24 +6,15 @@ package IFML.Core.provider;
 import IFML.Core.CoreFactory;
 import IFML.Core.CorePackage;
 import IFML.Core.ModuleDefinition;
-
 import IFML.Extensions.ExtensionsFactory;
-
+import IFML.Mobile.MobileFactory;
 import java.util.Collection;
 import java.util.List;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
@@ -33,13 +24,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * @generated
  */
 public class ModuleDefinitionItemProvider
-	extends ModularizationElementItemProvider
-	implements
-		IEditingDomainItemProvider,
-		IStructuredItemContentProvider,
-		ITreeItemContentProvider,
-		IItemLabelProvider,
-		IItemPropertySource {
+	extends ModularizationElementItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -434,6 +419,126 @@ public class ModuleDefinitionItemProvider
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
 				 ExtensionsFactory.eINSTANCE.createSetContextEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createScreen()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createSearchView()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createTouchEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createLongPressEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createPanEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createPinchEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createSwipeEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createTapEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createCameraAction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createMicrophoneAction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createCameraActionEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createMicrophoneActionEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createBatteryEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createConnectionEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createMemoryEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createAccelerometerEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createGyroscopeEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createLocationEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createMagnetometerEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createMotionEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createOrientationEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createProximityEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createRotateEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createShakeEvent()));
 	}
 
 	/**

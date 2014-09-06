@@ -44,4 +44,19 @@
             class="IFML.Extensions.util.ExtensionsResourceFactoryImpl"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated IFML-Metamodel -->
+      <package
+            uri="http://www.omg.org/spec/20130218/mobile"
+            class="IFML.Mobile.MobilePackage"
+            genModel="model/IFML-Metamodel.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated IFML-Metamodel -->
+      <parser
+            type="mobile"
+            class="IFML.Mobile.util.MobileResourceFactoryImpl"/>
+   </extension>
+
 </plugin>

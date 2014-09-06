@@ -14,7 +14,10 @@ Export-Package: IFML.Core,
  IFML.DataTypes.impl,
  IFML.Extensions,
  IFML.Extensions.impl,
- IFML.Extensions.util
+ IFML.Extensions.util,
+ IFML.Mobile,
+ IFML.Mobile.impl,
+ IFML.Mobile.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
