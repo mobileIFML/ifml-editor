@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module helper('http://www.omg.org/spec/20130218/core', 'http://www.omg.org/spec/20130218/ext')/]
+[module helper('http://www.omg.org/spec/20130218/core', 'http://www.omg.org/spec/20130218/ext','http://www.omg.org/spec/20130218/mobile')/]
 
 [query public getInteractionFlowModel(ifml_model : IFMLModel) : InteractionFlowModel = 
 	ifml_model.interactionFlowModel
@@ -195,6 +195,37 @@
 	endif
 
 /]
+[query public getScreenLabel(s: Screen) : String = 
+		if (s.isLandmark and s.isDefault and not s.isXOR) 
+		then '[L][D]'
+		else 
+			if(s.isLandmark and not s.isDefault and not s.isXOR)
+			then '[L]'
+			else
+				if(not s.isLandmark and s.isDefault and not s.isXOR)
+				then '[D]'
+				else 
+					if(s.isLandmark and not s.isDefault and s.isXOR)
+					then '[L][XOR]'
+					else
+						if(not s.isLandmark and s.isDefault and s.isXOR)
+						then '[D][XOR]'
+						else
+							if(s.isLandmark and s.isDefault and s.isXOR)
+							then '[L][D][XOR]'
+							else
+								if(not s.isLandmark and not s.isDefault and s.isXOR)
+								then '[XOR]'
+								else
+									''
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+/]
 
 [query public getExtContainer(v :OclAny) : String = 
 	
@@ -204,12 +235,16 @@
 		if (v.oclIsTypeOf(IFMLMenu)) 
 		then getMenuLabel(getMenu(v)) + '«Menu» '
 		else 
+if (v.oclIsTypeOf(Screen)) 
+		then getScreenLabel(getScreen(v)) + '«Screen» '
+		else
 			if (v.oclIsTypeOf(ViewContainer)) 
 			then getViewContainerLabel(getViewContainer(v)) + '«ViewContainer» '
 			else 'RRR'
 			endif
 		endif
 	endif
+endif
 /]
 
 [query public getViewContainer(v :OclAny) : ViewContainer = 
@@ -225,6 +260,10 @@
 [query public getMenu(v :OclAny) : IFMLMenu = 
 	
 	v.oclAsType(IFMLMenu)
+/]
+[query public getScreen(v :OclAny) : Screen = 
+	
+	v.oclAsType(Screen)
 /]
 
 [query public getViewComponentLabel(v :OclAny) : String = 
@@ -278,22 +317,49 @@
 				if (v.oclIsTypeOf(ActionEvent)) 
 				then '«ActionEvent» '
 				else 
-					if (v.oclIsTypeOf(LandingEvent)) 
-					then '«LandingEvent» '
-					else 
-						if (v.oclIsTypeOf(ViewElementEvent)) 
-						then '«ViewElementEvent» '
-						else 
-							if (v.oclIsTypeOf(ViewElementEvent)) 
-							then '«ViewElementEvent» '
+					if (v.oclIsTypeOf(CameraActionEvent)) 
+					then '«CameraActionEvent» '
+					else
+						if (v.oclIsTypeOf(MicrophoneActionEvent)) 
+						then '«MicrophoneActionEvent» '
+						else
+							if (v.oclIsTypeOf(LandingEvent)) 
+							then '«LandingEvent» '
 							else 
-								if (v.oclIsTypeOf(OnSelectEvent)) 
-								then '«OnSelectEvent» '
+								if (v.oclIsTypeOf(ViewElementEvent)) 
+								then '«ViewElementEvent» '
 								else 
-									if (v.oclIsTypeOf(OnSubmitEvent)) 
-									then '«OnSubmitEvent» '
+									if (v.oclIsTypeOf(ViewElementEvent)) 
+									then '«ViewElementEvent» '
 									else 
-										'RRR'
+										if (v.oclIsTypeOf(OnSelectEvent)) 
+										then '«OnSelectEvent» '
+										else 
+											if (v.oclIsTypeOf(TouchEvent)) 
+											then '«TouchEvent» '
+											else 
+												if (v.oclIsTypeOf(LongPressEvent)) 
+												then '«LongPressEvent» '
+												else 
+													if (v.oclIsTypeOf(PanEvent)) 
+													then '«PanEvent» '
+													else 
+														if (v.oclIsTypeOf(PinchEvent)) 
+														then '«PinchEvent» '
+														else 
+															if (v.oclIsTypeOf(TapEvent)) 
+															then '«TapEvent» '
+															else 
+																if (v.oclIsTypeOf(OnSubmitEvent)) 
+																then '«OnSubmitEvent» '
+																else 
+																'RRR'			
+															endif
+														endif
+													endif
+												endif
+											endif
+										endif
 									endif
 								endif
 							endif
@@ -303,6 +369,7 @@
 			endif
 		endif
 	endif
+endif
 /]
 
 [query public getSystemEvent(v :OclAny) : String = 
@@ -327,10 +394,30 @@
 		else 
 			if (v.oclIsTypeOf(OnSubmitEvent)) 
 			then '«OnSubmitEvent» '
-			else 'RRR'
+			else
+				if (v.oclIsTypeOf(TouchEvent)) 
+				then '«TouchEvent» '
+				else
+					if (v.oclIsTypeOf(LongPressEvent)) 
+					then '«LongPressEvent» '
+					else
+						if (v.oclIsTypeOf(PanEvent)) 
+						then '«PanEvent» '
+						else
+							if (v.oclIsTypeOf(PinchEvent)) 
+							then '«PinchEvent» '
+							else
+								if (v.oclIsTypeOf(TapEvent)) 
+								then '«TapEvent» '
+								else 'RRR'
+							endif
+						endif
+					endif
+				endif
 			endif
 		endif
 	endif
+endif
 /]
 
 [query public getViewComponentPartLabel(v :OclAny) : String = 
@@ -385,6 +472,26 @@
 	endif
 /]
 
+
+[query public getActionLabel(v :OclAny) : String = 
+	
+	if (v.oclIsTypeOf(CameraAction)) 
+	then '«CameraAction» '
+	else 
+		if (v.oclIsTypeOf(MicrophoneAction)) 
+		then '«MicrophoneAction» '
+	
+else 
+		if (v.oclIsTypeOf(IFMLAction)) 
+		then '«Action» '	
+else 'RRR'
+		endif
+	endif
+endif
+/]
+
+
+
 [query public isWindow(o:OclAny) : Boolean = 
 	if(o.oclIsTypeOf(IFMLWindow))
 	then true
@@ -426,6 +533,40 @@
 	else false
 	endif
 /]
+
+[query public isScreen(o:OclAny) : Boolean = 
+	if(o.oclIsTypeOf(Screen))
+	then true
+	else false
+	endif
+/]
+
+[query public isIFMLAction(o:OclAny) : Boolean = 
+	if(o.oclIsTypeOf(IFMLAction))
+	then true
+	else false
+	endif
+/]
+
+[query public isCameraAction(o:OclAny) : Boolean = 
+	if(o.oclIsTypeOf(CameraAction))
+	then true
+	else false
+	endif
+/]
+[query public isMicrophoneAction(o:OclAny) : Boolean = 
+	if(o.oclIsTypeOf(MicrophoneAction))
+	then true
+	else false
+	endif
+/]
+[query public isCameraActionEvent(o:OclAny) : Boolean = 
+	if(o.oclIsTypeOf(CameraActionEvent))
+	then true
+	else false
+	endif
+/]
+
 
 [query public getModelDefinitionReference(mod:IFMLModule) : String = 
 	if(mod.moduleDefinition.oclIsUndefined())
