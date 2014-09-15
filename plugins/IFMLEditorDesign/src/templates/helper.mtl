@@ -271,19 +271,27 @@ endif
 	if (v.oclIsTypeOf(ViewComponent)) 
 	then '«ViewComponent» '
 	else 
-		if (v.oclIsTypeOf(List)) 
-		then '«List» '
+		if (v.oclIsTypeOf(MobileMessage)) 
+		then '«Message» '
 		else 
-			if (v.oclIsTypeOf(Form)) 
-			then '«Form» '
+			if (v.oclIsTypeOf(MobileViewComponent)) 
+			then '«MobileComponent» '
 			else 
-				if (v.oclIsTypeOf(Details)) 
-				then '«Details» '
-				else 'RRR'
+				if (v.oclIsTypeOf(List)) 
+				then '«List» '
+				else 
+					if (v.oclIsTypeOf(Form)) 
+					then '«Form» '
+					else 
+						if (v.oclIsTypeOf(Details)) 
+						then '«Details» '
+						else 'RRR'
+					endif
 				endif
 			endif
 		endif
 	endif
+endif
 /]
 
 [query public getThrowingEventLabel(v :OclAny) : String = 
