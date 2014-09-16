@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_5ATRMIPREeGsVZAesWUgWw" name="UML Model" URI="">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_VK2hkJ6QEeGdnpRmAZh-dQ" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_YGTmEJ6QEeGdnpRmAZh-dQ" name="Integer"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_1738sD2oEeSZIL_MSOPvYg" name="Image"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_d3ZQENs8EeOsnrVUDdvbPA" name="org" URI="">
+    <packagedElement xmi:type="uml:Package" xmi:id="_h37GQNs8EeOsnrVUDdvbPA" name="automobile" URI="">
+      <packagedElement xmi:type="uml:Class" xmi:id="__W1boJ6PEeGdnpRmAZh-dQ" name="Movie">
+        <ownedAttribute xmi:id="_jEpi8J6QEeGdnpRmAZh-dQ" name="title" type="_VK2hkJ6QEeGdnpRmAZh-dQ"/>
+        <ownedAttribute xmi:id="_jm9l0J6QEeGdnpRmAZh-dQ" name="year" type="_YGTmEJ6QEeGdnpRmAZh-dQ"/>
+        <ownedAttribute xmi:id="_9vb_oD2oEeSZIL_MSOPvYg" name="thumbnail" type="_1738sD2oEeSZIL_MSOPvYg"/>
+        <ownedAttribute xmi:id="_JiRUgD2pEeSZIL_MSOPvYg" name="length" type="_YGTmEJ6QEeGdnpRmAZh-dQ"/>
+        <ownedAttribute xmi:id="_1CPJgD2pEeSZIL_MSOPvYg" name="genres" type="_iCfiAD2pEeSZIL_MSOPvYg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E4U4cD2qEeSZIL_MSOPvYg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CGBv8D2qEeSZIL_MSOPvYg" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_iCfiAD2pEeSZIL_MSOPvYg" name="Genre">
+        <ownedAttribute xmi:id="_mhy-4D2pEeSZIL_MSOPvYg" name="name" type="_VK2hkJ6QEeGdnpRmAZh-dQ"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
