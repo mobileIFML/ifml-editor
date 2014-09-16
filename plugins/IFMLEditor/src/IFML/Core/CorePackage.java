@@ -2102,13 +2102,22 @@ public interface CorePackage extends EPackage {
 	int VIEW_CONTAINER__ACTIONS = VIEW_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Is Home</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_CONTAINER__IS_HOME = VIEW_ELEMENT_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>View Container</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VIEW_CONTAINER_FEATURE_COUNT = VIEW_ELEMENT_FEATURE_COUNT + 5;
+	int VIEW_CONTAINER_FEATURE_COUNT = VIEW_ELEMENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of operations of the '<em>View Container</em>' class.
@@ -5907,6 +5916,17 @@ public interface CorePackage extends EPackage {
 	EReference getViewContainer_Actions();
 
 	/**
+	 * Returns the meta object for the attribute '{@link IFML.Core.ViewContainer#isIsHome <em>Is Home</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Home</em>'.
+	 * @see IFML.Core.ViewContainer#isIsHome()
+	 * @see #getViewContainer()
+	 * @generated
+	 */
+	EAttribute getViewContainer_IsHome();
+
+	/**
 	 * Returns the meta object for class '{@link IFML.Core.ActivationExpression <em>Activation Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7319,6 +7339,14 @@ public interface CorePackage extends EPackage {
 		 * @generated
 		 */
 		EReference VIEW_CONTAINER__ACTIONS = eINSTANCE.getViewContainer_Actions();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Home</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VIEW_CONTAINER__IS_HOME = eINSTANCE.getViewContainer_IsHome();
 
 		/**
 		 * The meta object literal for the '{@link IFML.Core.impl.ActivationExpressionImpl <em>Activation Expression</em>}' class.

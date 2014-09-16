@@ -15,19 +15,22 @@
 				if(not vc.isLandmark and vc.isDefault and not vc.isXOR)
 				then '[D]'
 				else 
-					if(vc.isLandmark and not vc.isDefault and vc.isXOR)
-					then '[L][XOR]'
+					if(vc.isHome)
+					then '[H]'
 					else
-						if(not vc.isLandmark and vc.isDefault and vc.isXOR)
-						then '[D][XOR]'
+						if(vc.isLandmark and not vc.isDefault and vc.isXOR)
+						then '[L][XOR]'
 						else
-							if(vc.isLandmark and vc.isDefault and vc.isXOR)
-							then '[L][D][XOR]'
+							if(not vc.isLandmark and vc.isDefault and vc.isXOR)
+							then '[D][XOR]'
 							else
-								if(not vc.isLandmark and not vc.isDefault and vc.isXOR)
-								then '[XOR]'
+								if(vc.isLandmark and vc.isDefault and vc.isXOR)
+								then '[L][D][XOR]'
 								else
-									''
+									if(not vc.isLandmark and not vc.isDefault and vc.isXOR)
+									then '[XOR]'
+									else
+										''
 								endif
 							endif
 						endif
@@ -35,6 +38,7 @@
 				endif
 			endif
 		endif
+endif
 /]
 
 [query public getMenuLabel(m : IFMLMenu) : String = 
@@ -205,19 +209,23 @@
 				if(not s.isLandmark and s.isDefault and not s.isXOR)
 				then '[D]'
 				else 
-					if(s.isLandmark and not s.isDefault and s.isXOR)
-					then '[L][XOR]'
-					else
-						if(not s.isLandmark and s.isDefault and s.isXOR)
-						then '[D][XOR]'
+					if(s.isHome)
+					then '[H]'
+					else 
+						if(s.isLandmark and not s.isDefault and s.isXOR)
+						then '[L][XOR]'
 						else
-							if(s.isLandmark and s.isDefault and s.isXOR)
-							then '[L][D][XOR]'
+							if(not s.isLandmark and s.isDefault and s.isXOR)
+							then '[D][XOR]'
 							else
-								if(not s.isLandmark and not s.isDefault and s.isXOR)
-								then '[XOR]'
+								if(s.isLandmark and s.isDefault and s.isXOR)
+								then '[L][D][XOR]'
 								else
-									''
+									if(not s.isLandmark and not s.isDefault and s.isXOR)
+									then '[XOR]'
+									else
+										''
+									endif
 								endif
 							endif
 						endif

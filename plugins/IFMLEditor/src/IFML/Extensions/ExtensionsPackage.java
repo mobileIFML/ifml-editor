@@ -1719,6 +1719,15 @@ public interface ExtensionsPackage extends EPackage {
 	int IFML_WINDOW__ACTIONS = CorePackage.VIEW_CONTAINER__ACTIONS;
 
 	/**
+	 * The feature id for the '<em><b>Is Home</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IFML_WINDOW__IS_HOME = CorePackage.VIEW_CONTAINER__IS_HOME;
+
+	/**
 	 * The feature id for the '<em><b>Is Modal</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2025,6 +2034,15 @@ public interface ExtensionsPackage extends EPackage {
 	 * @ordered
 	 */
 	int IFML_MENU__ACTIONS = CorePackage.VIEW_CONTAINER__ACTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Is Home</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IFML_MENU__IS_HOME = CorePackage.VIEW_CONTAINER__IS_HOME;
 
 	/**
 	 * The number of structural features of the '<em>IFML Menu</em>' class.

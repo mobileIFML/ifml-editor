@@ -63,6 +63,9 @@
    </extension>
 
 null
+null
+null
+null
    <extension point="org.eclipse.ui.editors">
       <!-- @generated IFML-Metamodel -->
       <editor
@@ -91,4 +94,7 @@ null
       </wizard>
    </extension>
 
+null
+null
+null
 </plugin>

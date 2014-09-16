@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link IFML.Core.ViewContainer#isIsXOR <em>Is XOR</em>}</li>
  *   <li>{@link IFML.Core.ViewContainer#getViewElements <em>View Elements</em>}</li>
  *   <li>{@link IFML.Core.ViewContainer#getActions <em>Actions</em>}</li>
+ *   <li>{@link IFML.Core.ViewContainer#isIsHome <em>Is Home</em>}</li>
  * </ul>
  * </p>
  *
@@ -138,5 +139,31 @@ public interface ViewContainer extends ViewElement {
 	 * @generated
 	 */
 	EList<IFMLAction> getActions();
+
+	/**
+	 * Returns the value of the '<em><b>Is Home</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Is Home</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Home</em>' attribute.
+	 * @see #setIsHome(boolean)
+	 * @see IFML.Core.CorePackage#getViewContainer_IsHome()
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean isIsHome();
+
+	/**
+	 * Sets the value of the '{@link IFML.Core.ViewContainer#isIsHome <em>Is Home</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Home</em>' attribute.
+	 * @see #isIsHome()
+	 * @generated
+	 */
+	void setIsHome(boolean value);
 
 } // ViewContainer

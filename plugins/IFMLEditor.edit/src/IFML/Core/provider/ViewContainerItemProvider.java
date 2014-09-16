@@ -50,6 +50,7 @@ public class ViewContainerItemProvider
 			addIsLandmarkPropertyDescriptor(object);
 			addIsDefaultPropertyDescriptor(object);
 			addIsXORPropertyDescriptor(object);
+			addIsHomePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -112,6 +113,28 @@ public class ViewContainerItemProvider
 				 getString("_UI_ViewContainer_isXOR_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ViewContainer_isXOR_feature", "_UI_ViewContainer_type"),
 				 CorePackage.Literals.VIEW_CONTAINER__IS_XOR,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Is Home feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIsHomePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ViewContainer_isHome_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ViewContainer_isHome_feature", "_UI_ViewContainer_type"),
+				 CorePackage.Literals.VIEW_CONTAINER__IS_HOME,
 				 true,
 				 false,
 				 false,
@@ -191,6 +214,7 @@ public class ViewContainerItemProvider
 			case CorePackage.VIEW_CONTAINER__IS_LANDMARK:
 			case CorePackage.VIEW_CONTAINER__IS_DEFAULT:
 			case CorePackage.VIEW_CONTAINER__IS_XOR:
+			case CorePackage.VIEW_CONTAINER__IS_HOME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case CorePackage.VIEW_CONTAINER__VIEW_ELEMENTS:
@@ -256,6 +280,16 @@ public class ViewContainerItemProvider
 			(createChildParameter
 				(CorePackage.Literals.VIEW_CONTAINER__VIEW_ELEMENTS,
 				 MobileFactory.eINSTANCE.createScreen()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_CONTAINER__VIEW_ELEMENTS,
+				 MobileFactory.eINSTANCE.createMobileViewComponent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_CONTAINER__VIEW_ELEMENTS,
+				 MobileFactory.eINSTANCE.createMobileMessage()));
 
 		newChildDescriptors.add
 			(createChildParameter

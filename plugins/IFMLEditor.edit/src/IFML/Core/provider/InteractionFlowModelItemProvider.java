@@ -367,6 +367,16 @@ public class InteractionFlowModelItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createMobileViewComponent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createMobileMessage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
 				 MobileFactory.eINSTANCE.createSearchView()));
 
 		newChildDescriptors.add

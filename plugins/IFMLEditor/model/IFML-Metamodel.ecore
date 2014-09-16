@@ -108,6 +108,8 @@
           upperBound="-1" eType="#//Core/ViewElement" containment="true" eOpposite="#//Core/ViewElement/viewContainer"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="actions" ordered="false"
           upperBound="-1" eType="#//Core/IFMLAction" containment="true" eOpposite="#//Core/IFMLAction/viewContainer"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isHome" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ActivationExpression" eSuperTypes="#//Core/BooleanExpression"/>
     <eClassifiers xsi:type="ecore:EClass" name="InteractionFlowModel" eSuperTypes="#//Core/NamedElement">
@@ -189,7 +191,7 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="dataContextVariables"
           ordered="false" upperBound="-1" eType="#//Core/DataContextVariable" eOpposite="#//Core/DataContextVariable/dataBinding"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="domainConcept" ordered="false"
-          lowerBound="1" eType="#//Core/DomainConcept" eOpposite="#//Core/DomainConcept/dataBinding"/>
+          lowerBound="1" eType="#//Core/DomainConcept"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ConditionalExpression" eSuperTypes="#//Core/Expression #//Core/ViewComponentPart"/>
     <eClassifiers xsi:type="ecore:EClass" name="Context" eSuperTypes="#//Core/Element">
@@ -255,7 +257,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="DomainConcept" eSuperTypes="#//Core/DomainElement">
       <eStructuralFeatures xsi:type="ecore:EReference" name="dataBinding" ordered="false"
-          eType="#//Core/DataBinding" eOpposite="#//Core/DataBinding/domainConcept"/>
+          eType="#//Core/DataBinding"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="FeatureConcept" eSuperTypes="#//Core/DomainElement">
       <eStructuralFeatures xsi:type="ecore:EReference" name="visualizationAttribute"
@@ -331,13 +333,17 @@
   </eSubpackages>
   <eSubpackages name="Mobile" nsURI="http://www.omg.org/spec/20130218/mobile" nsPrefix="mobile">
     <eClassifiers xsi:type="ecore:EClass" name="MobileViewContainer" abstract="true"
-        eSuperTypes="#//Core/ViewContainer"/>
+        eSuperTypes="#//Core/ViewContainer">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isMobileSystem" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"/>
+    </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Screen" eSuperTypes="#//Mobile/MobileViewContainer">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="isModal" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasNavBar" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="MobileViewComponent" abstract="true"
-        eSuperTypes="#//Core/ViewComponent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileViewComponent" eSuperTypes="#//Core/ViewComponent">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isMobileSystem" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MobileMessage" eSuperTypes="#//Mobile/MobileViewComponent"/>
     <eClassifiers xsi:type="ecore:EClass" name="SearchView" eSuperTypes="#//Mobile/MobileViewComponent"/>
     <eClassifiers xsi:type="ecore:EClass" name="MobileViewElementEvent" abstract="true"
         eSuperTypes="#//Core/ViewElementEvent"/>

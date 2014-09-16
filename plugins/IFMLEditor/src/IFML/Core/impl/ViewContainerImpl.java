@@ -34,6 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link IFML.Core.impl.ViewContainerImpl#isIsXOR <em>Is XOR</em>}</li>
  *   <li>{@link IFML.Core.impl.ViewContainerImpl#getViewElements <em>View Elements</em>}</li>
  *   <li>{@link IFML.Core.impl.ViewContainerImpl#getActions <em>Actions</em>}</li>
+ *   <li>{@link IFML.Core.impl.ViewContainerImpl#isIsHome <em>Is Home</em>}</li>
  * </ul>
  * </p>
  *
@@ -119,6 +120,26 @@ public class ViewContainerImpl extends ViewElementImpl implements ViewContainer 
 	 * @ordered
 	 */
 	protected EList<IFMLAction> actions;
+
+	/**
+	 * The default value of the '{@link #isIsHome() <em>Is Home</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isIsHome()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean IS_HOME_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isIsHome() <em>Is Home</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isIsHome()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean isHome = IS_HOME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,6 +252,27 @@ public class ViewContainerImpl extends ViewElementImpl implements ViewContainer 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean isIsHome() {
+		return isHome;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsHome(boolean newIsHome) {
+		boolean oldIsHome = isHome;
+		isHome = newIsHome;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CorePackage.VIEW_CONTAINER__IS_HOME, oldIsHome, isHome));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 		@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -277,6 +319,8 @@ public class ViewContainerImpl extends ViewElementImpl implements ViewContainer 
 				return getViewElements();
 			case CorePackage.VIEW_CONTAINER__ACTIONS:
 				return getActions();
+			case CorePackage.VIEW_CONTAINER__IS_HOME:
+				return isIsHome();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -307,6 +351,9 @@ public class ViewContainerImpl extends ViewElementImpl implements ViewContainer 
 				getActions().clear();
 				getActions().addAll((Collection<? extends IFMLAction>)newValue);
 				return;
+			case CorePackage.VIEW_CONTAINER__IS_HOME:
+				setIsHome((Boolean)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -334,6 +381,9 @@ public class ViewContainerImpl extends ViewElementImpl implements ViewContainer 
 			case CorePackage.VIEW_CONTAINER__ACTIONS:
 				getActions().clear();
 				return;
+			case CorePackage.VIEW_CONTAINER__IS_HOME:
+				setIsHome(IS_HOME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -356,6 +406,8 @@ public class ViewContainerImpl extends ViewElementImpl implements ViewContainer 
 				return viewElements != null && !viewElements.isEmpty();
 			case CorePackage.VIEW_CONTAINER__ACTIONS:
 				return actions != null && !actions.isEmpty();
+			case CorePackage.VIEW_CONTAINER__IS_HOME:
+				return isHome != IS_HOME_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -376,6 +428,8 @@ public class ViewContainerImpl extends ViewElementImpl implements ViewContainer 
 		result.append(isDefault);
 		result.append(", isXOR: ");
 		result.append(isXOR);
+		result.append(", isHome: ");
+		result.append(isHome);
 		result.append(')');
 		return result.toString();
 	}

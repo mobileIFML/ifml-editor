@@ -428,6 +428,16 @@ public class ModuleDefinitionItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createMobileViewComponent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createMobileMessage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
 				 MobileFactory.eINSTANCE.createSearchView()));
 
 		newChildDescriptors.add
