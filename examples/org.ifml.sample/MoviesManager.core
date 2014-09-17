@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:mobile="http://www.omg.org/spec/20130218/mobile" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_5lSOMD26EeSXR7i73X4dkA">
   <interactionFlowModel id="_OiRlgD27EeSXR7i73X4dkA">
-    <interactionFlowModelElements xsi:type="mobile:Screen" id="_OiavcD27EeSXR7i73X4dkA" name="AvailableMovies" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.2/@outInteractionFlows.0 #//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0" isHome="true">
+    <interactionFlowModelElements xsi:type="mobile:Screen" id="_OiavcD27EeSXR7i73X4dkA" name="AvailableMovies" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.2/@outInteractionFlows.0 #//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0 #//@interactionFlowModel/@interactionFlowModelElements.5/@outInteractionFlows.0 #//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0" isHome="true">
       <viewElements xsi:type="ext:List" id="_yrw8MD27EeSXR7i73X4dkA" name="MovieList">
         <viewElementEvents xsi:type="mobile:TapEvent" id="_lwne8D28EeSXR7i73X4dkA" name="Add movie">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_Fr8MED29EeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
@@ -37,7 +37,7 @@
         </viewElementEvents>
       </viewElements>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="mobile:Screen" id="_Lv6ZUD3AEeSXR7i73X4dkA" name="Options">
+    <interactionFlowModelElements xsi:type="mobile:Screen" id="_Lv6ZUD3AEeSXR7i73X4dkA" name="Options" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.7/@outInteractionFlows.0">
       <viewElements xsi:type="ext:Details" id="_R2OQQD3AEeSXR7i73X4dkA" name="MovieDetails" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0">
         <viewElementEvents xsi:type="mobile:TapEvent" id="_ZafdgD3BEeSXR7i73X4dkA" name="Delete">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_inTyYD3BEeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.5"/>
@@ -47,10 +47,14 @@
             <parameterBindingGroup id="_61YqgD3CEeSXR7i73X4dkA"/>
           </outInteractionFlows>
         </viewElementEvents>
-        <viewElementEvents xsi:type="mobile:TapEvent" id="_X80TsD3DEeSXR7i73X4dkA" name="BackToHome"/>
+        <viewElementEvents xsi:type="mobile:TapEvent" id="_X80TsD3DEeSXR7i73X4dkA" name="BackToHome">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Jebi0D5YEeSy3O1ngCIlMg" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        </viewElementEvents>
       </viewElements>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="core:IFMLAction" id="_c1jPID3BEeSXR7i73X4dkA" name="Delete Movie" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+    <interactionFlowModelElements xsi:type="core:IFMLAction" id="_c1jPID3BEeSXR7i73X4dkA" name="Delete Movie" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <outInteractionFlows xsi:type="core:NavigationFlow" id="_iilZQD5XEeSy3O1ngCIlMg" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+    </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="mobile:Screen" id="_j5Ft4D3CEeSXR7i73X4dkA" name="EditMovie">
       <viewElements xsi:type="ext:Form" id="_qKT0UD3CEeSXR7i73X4dkA" name="ModifyMovieForm" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
         <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_I4nUsD3DEeSXR7i73X4dkA" name="Save mofication">
@@ -58,7 +62,9 @@
         </viewElementEvents>
       </viewElements>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="core:IFMLAction" id="_BigCwD3DEeSXR7i73X4dkA" name="Update Movie" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.6/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+    <interactionFlowModelElements xsi:type="core:IFMLAction" id="_BigCwD3DEeSXR7i73X4dkA" name="Update Movie" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.6/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <outInteractionFlows xsi:type="core:NavigationFlow" id="_E_mAAD5YEeSy3O1ngCIlMg" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.4"/>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_5lSOMT26EeSXR7i73X4dkA">
     <domainElements xsi:type="core:UMLDomainConcept" id="_5lVRgD26EeSXR7i73X4dkA" name="Movie" classifier="uml:Class models/model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
