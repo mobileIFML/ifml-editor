@@ -402,6 +402,11 @@ public class InteractionFlowModelItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
+				 MobileFactory.eINSTANCE.createSpreadEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.INTERACTION_FLOW_MODEL__INTERACTION_FLOW_MODEL_ELEMENTS,
 				 MobileFactory.eINSTANCE.createSwipeEvent()));
 
 		newChildDescriptors.add

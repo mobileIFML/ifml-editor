@@ -356,6 +356,7 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="fingersCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="PinchEvent" eSuperTypes="#//Mobile/TouchEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SpreadEvent" eSuperTypes="#//Mobile/TouchEvent"/>
     <eClassifiers xsi:type="ecore:EClass" name="SwipeEvent" eSuperTypes="#//Mobile/TouchEvent">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="swipeDirection" eType="#//Mobile/SwipeDirection"/>
     </eClassifiers>

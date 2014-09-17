@@ -463,6 +463,11 @@ public class ModuleDefinitionItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
+				 MobileFactory.eINSTANCE.createSpreadEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
 				 MobileFactory.eINSTANCE.createSwipeEvent()));
 
 		newChildDescriptors.add

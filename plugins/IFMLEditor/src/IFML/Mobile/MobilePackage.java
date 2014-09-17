@@ -1467,6 +1467,124 @@ public interface MobilePackage extends EPackage {
 	int PINCH_EVENT_OPERATION_COUNT = TOUCH_EVENT_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link IFML.Mobile.impl.SpreadEventImpl <em>Spread Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Mobile.impl.SpreadEventImpl
+	 * @see IFML.Mobile.impl.MobilePackageImpl#getSpreadEvent()
+	 * @generated
+	 */
+	int SPREAD_EVENT = 10;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__ID = TOUCH_EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__CONSTRAINTS = TOUCH_EVENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__ANNOTATIONS = TOUCH_EVENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__NAME = TOUCH_EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__PARAMETERS = TOUCH_EVENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__OUT_INTERACTION_FLOWS = TOUCH_EVENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__IN_INTERACTION_FLOWS = TOUCH_EVENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__ACTIVATION_EXPRESSION = TOUCH_EVENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__INTERACTION_FLOW_EXPRESSION = TOUCH_EVENT__INTERACTION_FLOW_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>View Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT__VIEW_ELEMENT = TOUCH_EVENT__VIEW_ELEMENT;
+
+	/**
+	 * The number of structural features of the '<em>Spread Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT_FEATURE_COUNT = TOUCH_EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Spread Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPREAD_EVENT_OPERATION_COUNT = TOUCH_EVENT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link IFML.Mobile.impl.SwipeEventImpl <em>Swipe Event</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1474,7 +1592,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getSwipeEvent()
 	 * @generated
 	 */
-	int SWIPE_EVENT = 10;
+	int SWIPE_EVENT = 11;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1601,7 +1719,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getTapEvent()
 	 * @generated
 	 */
-	int TAP_EVENT = 11;
+	int TAP_EVENT = 12;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1719,7 +1837,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMobileAction()
 	 * @generated
 	 */
-	int MOBILE_ACTION = 12;
+	int MOBILE_ACTION = 13;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1837,7 +1955,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getCameraAction()
 	 * @generated
 	 */
-	int CAMERA_ACTION = 13;
+	int CAMERA_ACTION = 14;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1955,7 +2073,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMicrophoneAction()
 	 * @generated
 	 */
-	int MICROPHONE_ACTION = 14;
+	int MICROPHONE_ACTION = 15;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2073,7 +2191,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMobileActionEvent()
 	 * @generated
 	 */
-	int MOBILE_ACTION_EVENT = 15;
+	int MOBILE_ACTION_EVENT = 16;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2182,7 +2300,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getCameraActionEvent()
 	 * @generated
 	 */
-	int CAMERA_ACTION_EVENT = 16;
+	int CAMERA_ACTION_EVENT = 17;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2318,7 +2436,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMicrophoneActionEvent()
 	 * @generated
 	 */
-	int MICROPHONE_ACTION_EVENT = 17;
+	int MICROPHONE_ACTION_EVENT = 18;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2454,7 +2572,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMobileSystemEvent()
 	 * @generated
 	 */
-	int MOBILE_SYSTEM_EVENT = 18;
+	int MOBILE_SYSTEM_EVENT = 19;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2581,7 +2699,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMobileResourceEvent()
 	 * @generated
 	 */
-	int MOBILE_RESOURCE_EVENT = 19;
+	int MOBILE_RESOURCE_EVENT = 20;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2708,7 +2826,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getBatteryEvent()
 	 * @generated
 	 */
-	int BATTERY_EVENT = 20;
+	int BATTERY_EVENT = 21;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2835,7 +2953,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getConnectionEvent()
 	 * @generated
 	 */
-	int CONNECTION_EVENT = 21;
+	int CONNECTION_EVENT = 22;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2962,7 +3080,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMemoryEvent()
 	 * @generated
 	 */
-	int MEMORY_EVENT = 22;
+	int MEMORY_EVENT = 23;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3089,7 +3207,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMobileSensorEvent()
 	 * @generated
 	 */
-	int MOBILE_SENSOR_EVENT = 23;
+	int MOBILE_SENSOR_EVENT = 24;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3216,7 +3334,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getAccelerometerEvent()
 	 * @generated
 	 */
-	int ACCELEROMETER_EVENT = 24;
+	int ACCELEROMETER_EVENT = 25;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3343,7 +3461,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getGyroscopeEvent()
 	 * @generated
 	 */
-	int GYROSCOPE_EVENT = 25;
+	int GYROSCOPE_EVENT = 26;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3470,7 +3588,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getLocationEvent()
 	 * @generated
 	 */
-	int LOCATION_EVENT = 26;
+	int LOCATION_EVENT = 27;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3597,7 +3715,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMagnetometerEvent()
 	 * @generated
 	 */
-	int MAGNETOMETER_EVENT = 27;
+	int MAGNETOMETER_EVENT = 28;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3724,7 +3842,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMotionEvent()
 	 * @generated
 	 */
-	int MOTION_EVENT = 28;
+	int MOTION_EVENT = 29;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3851,7 +3969,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getOrientationEvent()
 	 * @generated
 	 */
-	int ORIENTATION_EVENT = 29;
+	int ORIENTATION_EVENT = 30;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3978,7 +4096,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getProximityEvent()
 	 * @generated
 	 */
-	int PROXIMITY_EVENT = 30;
+	int PROXIMITY_EVENT = 31;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4105,7 +4223,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getRotateEvent()
 	 * @generated
 	 */
-	int ROTATE_EVENT = 31;
+	int ROTATE_EVENT = 32;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4223,7 +4341,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getShakeEvent()
 	 * @generated
 	 */
-	int SHAKE_EVENT = 32;
+	int SHAKE_EVENT = 33;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4350,7 +4468,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMobileDevice()
 	 * @generated
 	 */
-	int MOBILE_DEVICE = 33;
+	int MOBILE_DEVICE = 34;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4432,7 +4550,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMobileDeviceScreen()
 	 * @generated
 	 */
-	int MOBILE_DEVICE_SCREEN = 34;
+	int MOBILE_DEVICE_SCREEN = 35;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4523,7 +4641,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMobileDeviceSensor()
 	 * @generated
 	 */
-	int MOBILE_DEVICE_SENSOR = 35;
+	int MOBILE_DEVICE_SENSOR = 36;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4587,7 +4705,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getAccelerometer()
 	 * @generated
 	 */
-	int ACCELEROMETER = 36;
+	int ACCELEROMETER = 37;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4651,7 +4769,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getGPS()
 	 * @generated
 	 */
-	int GPS = 37;
+	int GPS = 38;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4733,7 +4851,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getGyroscope()
 	 * @generated
 	 */
-	int GYROSCOPE = 38;
+	int GYROSCOPE = 39;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4806,7 +4924,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMagnetometer()
 	 * @generated
 	 */
-	int MAGNETOMETER = 39;
+	int MAGNETOMETER = 40;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4879,7 +4997,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMicrophone()
 	 * @generated
 	 */
-	int MICROPHONE = 40;
+	int MICROPHONE = 41;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4952,7 +5070,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getProximitySensor()
 	 * @generated
 	 */
-	int PROXIMITY_SENSOR = 41;
+	int PROXIMITY_SENSOR = 42;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5025,7 +5143,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getStillCamera()
 	 * @generated
 	 */
-	int STILL_CAMERA = 42;
+	int STILL_CAMERA = 43;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5107,7 +5225,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getVideoCamera()
 	 * @generated
 	 */
-	int VIDEO_CAMERA = 43;
+	int VIDEO_CAMERA = 44;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5189,7 +5307,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMobileContextVariable()
 	 * @generated
 	 */
-	int MOBILE_CONTEXT_VARIABLE = 44;
+	int MOBILE_CONTEXT_VARIABLE = 45;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5271,7 +5389,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getAcceleration()
 	 * @generated
 	 */
-	int ACCELERATION = 45;
+	int ACCELERATION = 46;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5362,7 +5480,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getAccelerationX()
 	 * @generated
 	 */
-	int ACCELERATION_X = 46;
+	int ACCELERATION_X = 47;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5462,7 +5580,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getAccelerationY()
 	 * @generated
 	 */
-	int ACCELERATION_Y = 47;
+	int ACCELERATION_Y = 48;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5562,7 +5680,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getAccelerationZ()
 	 * @generated
 	 */
-	int ACCELERATION_Z = 48;
+	int ACCELERATION_Z = 49;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5662,7 +5780,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getLocation()
 	 * @generated
 	 */
-	int LOCATION = 49;
+	int LOCATION = 50;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5744,7 +5862,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getAltitude()
 	 * @generated
 	 */
-	int ALTITUDE = 50;
+	int ALTITUDE = 51;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5835,7 +5953,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getHorizontalAccuracy()
 	 * @generated
 	 */
-	int HORIZONTAL_ACCURACY = 51;
+	int HORIZONTAL_ACCURACY = 52;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5926,7 +6044,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getLatitude()
 	 * @generated
 	 */
-	int LATITUDE = 52;
+	int LATITUDE = 53;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6017,7 +6135,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getLongitude()
 	 * @generated
 	 */
-	int LONGITUDE = 53;
+	int LONGITUDE = 54;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6108,7 +6226,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getSpeed()
 	 * @generated
 	 */
-	int SPEED = 54;
+	int SPEED = 55;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6199,7 +6317,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getVerticalAccuracy()
 	 * @generated
 	 */
-	int VERTICAL_ACCURACY = 55;
+	int VERTICAL_ACCURACY = 56;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6290,7 +6408,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getAttitude()
 	 * @generated
 	 */
-	int ATTITUDE = 56;
+	int ATTITUDE = 57;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6372,7 +6490,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getPitch()
 	 * @generated
 	 */
-	int PITCH = 57;
+	int PITCH = 58;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6463,7 +6581,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getRoll()
 	 * @generated
 	 */
-	int ROLL = 58;
+	int ROLL = 59;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6554,7 +6672,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getYaw()
 	 * @generated
 	 */
-	int YAW = 59;
+	int YAW = 60;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6645,7 +6763,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getBattery()
 	 * @generated
 	 */
-	int BATTERY = 60;
+	int BATTERY = 61;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6727,7 +6845,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getBatteryLevel()
 	 * @generated
 	 */
-	int BATTERY_LEVEL = 61;
+	int BATTERY_LEVEL = 62;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6818,7 +6936,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getBatteryStatus()
 	 * @generated
 	 */
-	int BATTERY_STATUS = 62;
+	int BATTERY_STATUS = 63;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6909,7 +7027,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getNetwork()
 	 * @generated
 	 */
-	int NETWORK = 63;
+	int NETWORK = 64;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7000,7 +7118,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getBluetooth()
 	 * @generated
 	 */
-	int BLUETOOTH = 64;
+	int BLUETOOTH = 65;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7100,7 +7218,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getCellular()
 	 * @generated
 	 */
-	int CELLULAR = 65;
+	int CELLULAR = 66;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7200,7 +7318,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getWiFi()
 	 * @generated
 	 */
-	int WI_FI = 66;
+	int WI_FI = 67;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7300,7 +7418,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getDirection()
 	 * @generated
 	 */
-	int DIRECTION = 67;
+	int DIRECTION = 68;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7382,7 +7500,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMagneticHeadingDirection()
 	 * @generated
 	 */
-	int MAGNETIC_HEADING_DIRECTION = 68;
+	int MAGNETIC_HEADING_DIRECTION = 69;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7473,7 +7591,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getMagneticHeadingAccuracy()
 	 * @generated
 	 */
-	int MAGNETIC_HEADING_ACCURACY = 69;
+	int MAGNETIC_HEADING_ACCURACY = 70;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7564,7 +7682,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getTrueHeadingDirection()
 	 * @generated
 	 */
-	int TRUE_HEADING_DIRECTION = 70;
+	int TRUE_HEADING_DIRECTION = 71;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7655,7 +7773,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getRotation()
 	 * @generated
 	 */
-	int ROTATION = 71;
+	int ROTATION = 72;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7746,7 +7864,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getRotationX()
 	 * @generated
 	 */
-	int ROTATION_X = 72;
+	int ROTATION_X = 73;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7846,7 +7964,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getRotationY()
 	 * @generated
 	 */
-	int ROTATION_Y = 73;
+	int ROTATION_Y = 74;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7946,7 +8064,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getRotationZ()
 	 * @generated
 	 */
-	int ROTATION_Z = 74;
+	int ROTATION_Z = 75;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8046,7 +8164,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getSwipeDirection()
 	 * @generated
 	 */
-	int SWIPE_DIRECTION = 75;
+	int SWIPE_DIRECTION = 76;
 
 	/**
 	 * The meta object id for the '{@link IFML.Mobile.BatteryStatusDescription <em>Battery Status Description</em>}' enum.
@@ -8056,7 +8174,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getBatteryStatusDescription()
 	 * @generated
 	 */
-	int BATTERY_STATUS_DESCRIPTION = 76;
+	int BATTERY_STATUS_DESCRIPTION = 77;
 
 	/**
 	 * The meta object id for the '{@link IFML.Mobile.OrientationDescription <em>Orientation Description</em>}' enum.
@@ -8066,7 +8184,7 @@ public interface MobilePackage extends EPackage {
 	 * @see IFML.Mobile.impl.MobilePackageImpl#getOrientationDescription()
 	 * @generated
 	 */
-	int ORIENTATION_DESCRIPTION = 77;
+	int ORIENTATION_DESCRIPTION = 78;
 
 
 	/**
@@ -8245,6 +8363,16 @@ public interface MobilePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getPinchEvent();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Mobile.SpreadEvent <em>Spread Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Spread Event</em>'.
+	 * @see IFML.Mobile.SpreadEvent
+	 * @generated
+	 */
+	EClass getSpreadEvent();
 
 	/**
 	 * Returns the meta object for class '{@link IFML.Mobile.SwipeEvent <em>Swipe Event</em>}'.
@@ -9566,6 +9694,16 @@ public interface MobilePackage extends EPackage {
 		 * @generated
 		 */
 		EClass PINCH_EVENT = eINSTANCE.getPinchEvent();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Mobile.impl.SpreadEventImpl <em>Spread Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Mobile.impl.SpreadEventImpl
+		 * @see IFML.Mobile.impl.MobilePackageImpl#getSpreadEvent()
+		 * @generated
+		 */
+		EClass SPREAD_EVENT = eINSTANCE.getSpreadEvent();
 
 		/**
 		 * The meta object literal for the '{@link IFML.Mobile.impl.SwipeEventImpl <em>Swipe Event</em>}' class.

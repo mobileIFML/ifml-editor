@@ -83,6 +83,7 @@ import IFML.Mobile.Screen;
 import IFML.Mobile.SearchView;
 import IFML.Mobile.ShakeEvent;
 import IFML.Mobile.Speed;
+import IFML.Mobile.SpreadEvent;
 import IFML.Mobile.StillCamera;
 import IFML.Mobile.SwipeDirection;
 import IFML.Mobile.SwipeEvent;
@@ -183,6 +184,13 @@ public class MobilePackageImpl extends EPackageImpl implements MobilePackage {
 	 * @generated
 	 */
 	private EClass pinchEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass spreadEventEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -886,6 +894,15 @@ public class MobilePackageImpl extends EPackageImpl implements MobilePackage {
 	 */
 	public EClass getPinchEvent() {
 		return pinchEventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSpreadEvent() {
+		return spreadEventEClass;
 	}
 
 	/**
@@ -1933,6 +1950,8 @@ public class MobilePackageImpl extends EPackageImpl implements MobilePackage {
 
 		pinchEventEClass = createEClass(PINCH_EVENT);
 
+		spreadEventEClass = createEClass(SPREAD_EVENT);
+
 		swipeEventEClass = createEClass(SWIPE_EVENT);
 		createEAttribute(swipeEventEClass, SWIPE_EVENT__SWIPE_DIRECTION);
 
@@ -2155,6 +2174,7 @@ public class MobilePackageImpl extends EPackageImpl implements MobilePackage {
 		longPressEventEClass.getESuperTypes().add(this.getTouchEvent());
 		panEventEClass.getESuperTypes().add(this.getTouchEvent());
 		pinchEventEClass.getESuperTypes().add(this.getTouchEvent());
+		spreadEventEClass.getESuperTypes().add(this.getTouchEvent());
 		swipeEventEClass.getESuperTypes().add(this.getTouchEvent());
 		tapEventEClass.getESuperTypes().add(this.getTouchEvent());
 		mobileActionEClass.getESuperTypes().add(theCorePackage.getIFMLAction());
@@ -2250,6 +2270,8 @@ public class MobilePackageImpl extends EPackageImpl implements MobilePackage {
 		initEAttribute(getPanEvent_FingersCount(), ecorePackage.getEFloat(), "fingersCount", null, 0, 1, PanEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pinchEventEClass, PinchEvent.class, "PinchEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(spreadEventEClass, SpreadEvent.class, "SpreadEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(swipeEventEClass, SwipeEvent.class, "SwipeEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSwipeEvent_SwipeDirection(), this.getSwipeDirection(), "swipeDirection", null, 0, 1, SwipeEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

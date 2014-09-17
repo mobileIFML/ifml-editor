@@ -220,6 +220,21 @@ public class MobileSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case MobilePackage.SPREAD_EVENT: {
+				SpreadEvent spreadEvent = (SpreadEvent)theEObject;
+				T result = caseSpreadEvent(spreadEvent);
+				if (result == null) result = caseTouchEvent(spreadEvent);
+				if (result == null) result = caseMobileViewElementEvent(spreadEvent);
+				if (result == null) result = caseViewElementEvent(spreadEvent);
+				if (result == null) result = caseCatchingEvent(spreadEvent);
+				if (result == null) result = caseEvent(spreadEvent);
+				if (result == null) result = caseInteractionFlowElement(spreadEvent);
+				if (result == null) result = caseNamedElement(spreadEvent);
+				if (result == null) result = caseInteractionFlowModelElement(spreadEvent);
+				if (result == null) result = caseElement(spreadEvent);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case MobilePackage.SWIPE_EVENT: {
 				SwipeEvent swipeEvent = (SwipeEvent)theEObject;
 				T result = caseSwipeEvent(swipeEvent);
@@ -1167,6 +1182,21 @@ public class MobileSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePinchEvent(PinchEvent object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Spread Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Spread Event</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSpreadEvent(SpreadEvent object) {
 		return null;
 	}
 

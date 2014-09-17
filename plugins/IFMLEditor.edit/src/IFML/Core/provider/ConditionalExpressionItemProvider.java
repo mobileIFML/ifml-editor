@@ -305,6 +305,11 @@ public class ConditionalExpressionItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_COMPONENT_PART__VIEW_ELEMENT_EVENTS,
+				 MobileFactory.eINSTANCE.createSpreadEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_COMPONENT_PART__VIEW_ELEMENT_EVENTS,
 				 MobileFactory.eINSTANCE.createSwipeEvent()));
 
 		newChildDescriptors.add

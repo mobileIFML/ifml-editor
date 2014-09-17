@@ -256,6 +256,29 @@ public class MobileItemProviderAdapterFactory extends MobileAdapterFactory imple
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Mobile.SpreadEvent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SpreadEventItemProvider spreadEventItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Mobile.SpreadEvent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createSpreadEventAdapter() {
+		if (spreadEventItemProvider == null) {
+			spreadEventItemProvider = new SpreadEventItemProvider(this);
+		}
+
+		return spreadEventItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link IFML.Mobile.SwipeEvent} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1535,6 +1558,7 @@ public class MobileItemProviderAdapterFactory extends MobileAdapterFactory imple
 		if (longPressEventItemProvider != null) longPressEventItemProvider.dispose();
 		if (panEventItemProvider != null) panEventItemProvider.dispose();
 		if (pinchEventItemProvider != null) pinchEventItemProvider.dispose();
+		if (spreadEventItemProvider != null) spreadEventItemProvider.dispose();
 		if (swipeEventItemProvider != null) swipeEventItemProvider.dispose();
 		if (tapEventItemProvider != null) tapEventItemProvider.dispose();
 		if (cameraActionItemProvider != null) cameraActionItemProvider.dispose();

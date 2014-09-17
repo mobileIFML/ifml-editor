@@ -94,6 +94,15 @@ public interface MobileFactory extends EFactory {
 	PinchEvent createPinchEvent();
 
 	/**
+	 * Returns a new object of class '<em>Spread Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Spread Event</em>'.
+	 * @generated
+	 */
+	SpreadEvent createSpreadEvent();
+
+	/**
 	 * Returns a new object of class '<em>Swipe Event</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

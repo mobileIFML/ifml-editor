@@ -196,6 +196,11 @@ public class ViewElementItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
+				 MobileFactory.eINSTANCE.createSpreadEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
 				 MobileFactory.eINSTANCE.createSwipeEvent()));
 
 		newChildDescriptors.add

@@ -65,6 +65,7 @@ public class MobileFactoryImpl extends EFactoryImpl implements MobileFactory {
 			case MobilePackage.LONG_PRESS_EVENT: return createLongPressEvent();
 			case MobilePackage.PAN_EVENT: return createPanEvent();
 			case MobilePackage.PINCH_EVENT: return createPinchEvent();
+			case MobilePackage.SPREAD_EVENT: return createSpreadEvent();
 			case MobilePackage.SWIPE_EVENT: return createSwipeEvent();
 			case MobilePackage.TAP_EVENT: return createTapEvent();
 			case MobilePackage.CAMERA_ACTION: return createCameraAction();
@@ -237,6 +238,16 @@ public class MobileFactoryImpl extends EFactoryImpl implements MobileFactory {
 	public PinchEvent createPinchEvent() {
 		PinchEventImpl pinchEvent = new PinchEventImpl();
 		return pinchEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SpreadEvent createSpreadEvent() {
+		SpreadEventImpl spreadEvent = new SpreadEventImpl();
+		return spreadEvent;
 	}
 
 	/**

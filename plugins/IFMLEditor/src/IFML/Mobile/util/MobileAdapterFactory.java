@@ -127,6 +127,10 @@ public class MobileAdapterFactory extends AdapterFactoryImpl {
 				return createPinchEventAdapter();
 			}
 			@Override
+			public Adapter caseSpreadEvent(SpreadEvent object) {
+				return createSpreadEventAdapter();
+			}
+			@Override
 			public Adapter caseSwipeEvent(SwipeEvent object) {
 				return createSwipeEventAdapter();
 			}
@@ -611,6 +615,20 @@ public class MobileAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPinchEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Mobile.SpreadEvent <em>Spread Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Mobile.SpreadEvent
+	 * @generated
+	 */
+	public Adapter createSpreadEventAdapter() {
 		return null;
 	}
 
