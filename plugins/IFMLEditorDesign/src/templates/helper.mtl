@@ -417,8 +417,8 @@ endif
 					if (v.oclIsTypeOf(LongPressEvent)) 
 					then '«LongPressEvent» '
 					else
-						if (v.oclIsTypeOf(PanEvent)) 
-						then '«PanEvent» '
+						if (v.oclIsTypeOf(SpreadEvent)) 
+						then '«SpreadEvent» '
 						else
 							if (v.oclIsTypeOf(PinchEvent)) 
 							then '«PinchEvent» '
