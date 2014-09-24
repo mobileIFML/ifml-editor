@@ -384,7 +384,7 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getScreenLabel() +' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
@@ -1248,6 +1248,13 @@
             </conditionnalStyles>
           </subNodeMappings>
           <subContainerMappings name="ViewContainer" semanticCandidatesExpression="[self.interactionFlowModelElement/]" domainClass="ViewContainer">
+            <subNodeMappings name="IFMLParameter" label="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
+              <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]" labelPosition="node" resizeKind="NSEW" width="1" height="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
             <subContainerMappings name="InternalViewContainer" semanticCandidatesExpression="[viewElements/]" domainClass="ViewContainer">
               <subContainerMappings name="InternalViewComponent" semanticCandidatesExpression="[viewElements/]" domainClass="ViewComponent" childrenPresentation="List">
                 <borderedNodeMappings name="InternalViewElementEvent" semanticCandidatesExpression="[viewElementEvents/]" domainClass="ViewElementEvent">
@@ -1290,7 +1297,7 @@
                   </conditionnalStyles>
                 </subNodeMappings>
                 <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="9" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true">
-                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                   <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -1399,17 +1406,15 @@
                 </conditionnalStyles>
               </subNodeMappings>
               <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="9" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel() +' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subContainerMappings>
           <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Definition» '+self.name/]">
@@ -2318,39 +2323,6 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
-        <toolSections name="Connections" label="Connections">
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="DataFlowCreation" label="Data Flow" edgeMappings="//@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@edgeMappings[name='DataFlow']" iconPath="/IFMLEditorDesign/img/icons/data_flow_obj.png">
-            <sourceVariable name="source"/>
-            <targetVariable name="target"/>
-            <sourceViewVariable name="sourceView"/>
-            <targetViewVariable name="targetView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="DataFlow" referenceName="outInteractionFlows" variableName="data_flow">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="sourceInteractionFlowElement" valueExpression="[source/]"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="targetInteractionFlowElement" valueExpression="[target/]"/>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="NavigationFlowCreation" label="Navigation Flow" edgeMappings="//@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@edgeMappings[name='NavigationFlow']" iconPath="/IFMLEditorDesign/img/icons/navigation_flow_obj.png">
-            <sourceVariable name="source"/>
-            <targetVariable name="target"/>
-            <sourceViewVariable name="sourceView"/>
-            <targetViewVariable name="targetView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="NavigationFlow" referenceName="outInteractionFlows" variableName="navigation_flow">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="sourceInteractionFlowElement" valueExpression="[source/]"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="targetInteractionFlowElement" valueExpression="[target/]"/>
-                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
-                    <subModelOperations xsi:type="tool_1:SetValue" featureName="outInteractionFlows" valueExpression="[outInteractionFlows->including(navigation_flow)/]"/>
-                  </subModelOperations>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-        </toolSections>
         <toolSections name="MobilePalette" label="Mobile">
           <ownedTools xsi:type="tool:ContainerCreationDescription" name="ScreenCreation" label="Screen" containerMappings="//@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer']/@subContainerMappings[name='DoubleInternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModuleDefinition']/@subContainerMappings[name='ViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer']/@subContainerMappings[name='DoubleInternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='ModuleDefinition']/@subContainerMappings[name='ViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='ModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='ModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer']/@subContainerMappings[name='DoubleInternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='InternalModulePackage']/@subContainerMappings[name='InternalModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='InternalModulePackage']/@subContainerMappings[name='InternalModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer']/@subContainerMappings[name='DoubleInternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='InternalModulePackage']/@subContainerMappings[name='DoubleInternalModulePackage']/@subContainerMappings[name='DoubleInternalModuleDefinition']/@subContainerMappings[name='ViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='InternalModulePackage']/@subContainerMappings[name='DoubleInternalModulePackage']/@subContainerMappings[name='DoubleInternalModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='InternalModulePackage']/@subContainerMappings[name='DoubleInternalModulePackage']/@subContainerMappings[name='DoubleInternalModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='InternalViewContainer']/@subContainerMappings[name='DoubleInternalViewContainer'] //@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='InternalModulePackage']/@subContainerMappings[name='InternalModuleDefinition']/@subContainerMappings[name='ViewContainer']" iconPath="/IFMLEditorDesign/img/icons/view_container_obj.png">
             <variable name="container"/>
@@ -2583,6 +2555,39 @@
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MicrophoneActionEvent" referenceName="actionEvents">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['MicrophoneAction Event'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Connections" label="Connections">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="DataFlowCreation" label="Data Flow" edgeMappings="//@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@edgeMappings[name='DataFlow']" iconPath="/IFMLEditorDesign/img/icons/data_flow_obj.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="DataFlow" referenceName="outInteractionFlows" variableName="data_flow">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="sourceInteractionFlowElement" valueExpression="[source/]"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="targetInteractionFlowElement" valueExpression="[target/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="NavigationFlowCreation" label="Navigation Flow" edgeMappings="//@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@edgeMappings[name='NavigationFlow']" iconPath="/IFMLEditorDesign/img/icons/navigation_flow_obj.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="NavigationFlow" referenceName="outInteractionFlows" variableName="navigation_flow">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="sourceInteractionFlowElement" valueExpression="[source/]"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="targetInteractionFlowElement" valueExpression="[target/]"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="outInteractionFlows" valueExpression="[outInteractionFlows->including(navigation_flow)/]"/>
+                  </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
