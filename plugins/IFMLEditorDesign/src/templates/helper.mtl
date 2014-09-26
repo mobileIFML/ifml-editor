@@ -582,7 +582,18 @@ endif
 	else false
 	endif
 /]
-
+[query public isViewComponentPart(o:OclAny) : Boolean = 
+	if(o.oclIsKindOf(ViewComponentPart))
+	then true
+	else false
+	endif
+/]
+[query public isViewComponent(o:OclAny) : Boolean = 
+	if(o.oclIsKindOf(ViewComponent))
+	then true
+	else false
+	endif
+/]
 
 [query public getModelDefinitionReference(mod:IFMLModule) : String = 
 	if(mod.moduleDefinition.oclIsUndefined())
