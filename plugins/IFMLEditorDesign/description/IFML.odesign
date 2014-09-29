@@ -1,4 +1,4 @@
-A<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="IFML" version="8.1.0">
   <ownedViewpoints name="IFML Core">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="IFMLDiagram" domainClass="IFMLModel">
@@ -10,7 +10,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </borderedNodeMappings>
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getActionLabel() + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="5" arcHeight="5" workspacePath="/IFMLEditorDesign/img/components/Action.png">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getActionLabel() + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="7" arcHeight="10" roundedCorner="true" workspacePath="/IFMLEditorDesign/img/components/Action.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
@@ -23,7 +23,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
           </style>
         </nodeMappings>
         <nodeMappings name="ActivationExpression" semanticCandidatesExpression="[self.interactionFlowModel.interactionFlowModelElements/]" domainClass="ActivationExpression">
-          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['«Activation Expression»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
+          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['Â«Activation ExpressionÂ»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -34,13 +34,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
-          <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«JumpEvent» '/]">
+          <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«JumpEventÂ» '/]">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/JumpEvent.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
-          <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«SetContextEvent» '/]">
+          <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«SetContextEventÂ» '/]">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SetContextEvent.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -52,19 +52,19 @@ A<?xml version="1.0" encoding="UTF-8"?>
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
-          <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«SystemEvent» ' /]">
+          <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«SystemEventÂ» ' /]">
             <style xsi:type="style:WorkspaceImageDescription" labelExpression="[self.getSystemEvent()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SystemEvent.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
-          <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«OnLoadEvent» ' /]">
+          <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«OnLoadEventÂ» ' /]">
             <style xsi:type="style:WorkspaceImageDescription" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnLoadEvent.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
-          <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«LandingEvent» '/]">
+          <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«LandingEventÂ» '/]">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="9" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LandingEvent.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -72,14 +72,14 @@ A<?xml version="1.0" encoding="UTF-8"?>
           </conditionnalStyles>
         </nodeMappings>
         <nodeMappings name="Module" semanticCandidatesExpression="[self.interactionFlowModel.interactionFlowModelElements/]" domainClass="IFMLModule">
-          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['«Module» ' + self.name + '\n' + self.getModelDefinitionReference() /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="20" height="5">
+          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['Â«ModuleÂ» ' + self.name + '\n' + self.getModelDefinitionReference() /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="20" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="Port" semanticCandidatesExpression="[self.interactionFlowModel.interactionFlowModelElements/]" domainClass="IFMLPort">
-          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['«Port» ' + self.name + '\n' + self.getPortDefinitionReference() /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="20" height="5">
+          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['Â«PortÂ» ' + self.name + '\n' + self.getPortDefinitionReference() /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="20" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -119,7 +119,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
         </edgeMappings>
         <containerMappings name="ViewContainer" semanticCandidatesExpression="[self.interactionFlowModel.interactionFlowModelElements/]" domainClass="ViewContainer">
           <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-            <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]" widthComputationExpression="20" heightComputationExpression="3">
+            <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -133,37 +133,37 @@ A<?xml version="1.0" encoding="UTF-8"?>
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«TapEvent» ' /]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«TapEventÂ» ' /]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/ViewElementEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«LongPressEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«LongPressEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LongPressEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«PinchEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«PinchEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/PinchEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«SpreadEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«SpreadEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SpreadEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -176,13 +176,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
-                    <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['«OnSelectEvent» ' + self.name/]" labelAlignment="LEFT" tooltipExpression="['prova'/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
+                    <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['Â«OnSelectEventÂ» ' + self.name/]" labelAlignment="LEFT" tooltipExpression="['prova'/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» ' /]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» ' /]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -192,28 +192,28 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 <subContainerMappings name="ViewComponentPart" semanticCandidatesExpression="[viewComponentParts/]" domainClass="ViewComponentPart">
                   <subContainerMappings name="InternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
                     <subContainerMappings name="DoubleInternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
-                      <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                      <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                         <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                       </style>
                     </subContainerMappings>
-                    <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                    <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                       <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     </style>
                   </subContainerMappings>
-                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="10" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true" widthComputationExpression="25" heightComputationExpression="12">
+                <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="9" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" labelAlignment="LEFT" roundedCorner="true">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -221,14 +221,14 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 </style>
               </subContainerMappings>
               <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]">
+                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
-              <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="10" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true" widthComputationExpression="25" heightComputationExpression="12">
+              <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="9" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" labelAlignment="LEFT" roundedCorner="true">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -242,37 +242,37 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«TapEvent» ' /]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«TapEventÂ» ' /]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/ViewElementEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«LongPressEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«LongPressEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LongPressEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«PinchEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«PinchEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/PinchEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«SpreadEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«SpreadEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SpreadEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -316,14 +316,14 @@ A<?xml version="1.0" encoding="UTF-8"?>
               </style>
             </subContainerMappings>
             <subContainerMappings name="InternalIFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-              <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]" widthComputationExpression="20" heightComputationExpression="3">
+              <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
@@ -334,37 +334,37 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
-              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                 <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
-              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» '/]">
+              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» '/]">
                 <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
-              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«TapEvent» ' /]">
+              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«TapEventÂ» ' /]">
                 <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/ViewElementEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
-              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«LongPressEvent» '/]">
+              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«LongPressEventÂ» '/]">
                 <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LongPressEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
-              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«PinchEvent» '/]">
+              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«PinchEventÂ» '/]">
                 <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/PinchEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
-              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«SpreadEvent» '/]">
+              <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«SpreadEventÂ» '/]">
                 <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SpreadEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -374,33 +374,21 @@ A<?xml version="1.0" encoding="UTF-8"?>
             <subContainerMappings name="ViewComponentPart" semanticCandidatesExpression="[viewComponentParts/]" domainClass="ViewComponentPart">
               <subContainerMappings name="InternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
                 <subContainerMappings name="DoubleInternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
-<<<<<<< HEAD
-                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="25" heightComputationExpression="3">
-=======
-                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
->>>>>>> refs/remotes/origin/master
+                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   </style>
                 </subContainerMappings>
-<<<<<<< HEAD
-                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="25" heightComputationExpression="3">
-=======
-                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="15" heightComputationExpression="3">
->>>>>>> refs/remotes/origin/master
+                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
-<<<<<<< HEAD
-              <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="25" heightComputationExpression="3">
-=======
-              <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
->>>>>>> refs/remotes/origin/master
+              <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -408,21 +396,21 @@ A<?xml version="1.0" encoding="UTF-8"?>
               </style>
             </subContainerMappings>
             <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-              <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]" widthComputationExpression="20" heightComputationExpression="3">
+              <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="10" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true" widthComputationExpression="25" heightComputationExpression="12">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="10" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-          <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
@@ -435,7 +423,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             </style>
           </subNodeMappings>
-          <style xsi:type="style:ShapeContainerStyleDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['«ParameterBindingGroup»'/]">
+          <style xsi:type="style:ShapeContainerStyleDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['Â«ParameterBindingGroupÂ»'/]">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -464,13 +452,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </borderedNodeMappings>
-              <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['«Action» ' + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="7" arcHeight="10" roundedCorner="true" workspacePath="/IFMLEditorDesign/img/components/action3.png">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['Â«ActionÂ» ' + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="7" arcHeight="10" roundedCorner="true" workspacePath="/IFMLEditorDesign/img/components/action3.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </subNodeMappings>
             <subNodeMappings name="ActivationExpression" semanticCandidatesExpression="[self.interactionFlowModelElement/]" domainClass="ActivationExpression">
-              <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['«Activation Expression»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
+              <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['Â«Activation ExpressionÂ»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -481,13 +469,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
-              <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«JumpEvent» '/]">
+              <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«JumpEventÂ» '/]">
                 <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/JumpEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
-              <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«SetContextEvent» '/]">
+              <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«SetContextEventÂ» '/]">
                 <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SetContextEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -499,20 +487,20 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
-              <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«SystemEvent» ' /]">
+              <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«SystemEventÂ» ' /]">
                 <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.getSystemEvent()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SystemEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
-              <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«OnLoadEvent» ' /]">
+              <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«OnLoadEventÂ» ' /]">
                 <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.getSystemEvent() + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnLoadEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
-              <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«LandingEvent» '/]">
-                <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['«LandingEvent» ' + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LandingEvent.png">
+              <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«LandingEventÂ» '/]">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['Â«LandingEventÂ» ' + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LandingEvent.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
@@ -526,13 +514,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
-                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                       <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       </style>
                     </conditionnalStyles>
-                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» ' /]">
+                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» ' /]">
                       <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -556,7 +544,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     </style>
                   </subContainerMappings>
                   <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-                    <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]">
+                    <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -577,13 +565,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       </style>
-                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                         <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         </style>
                       </conditionnalStyles>
-                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» ' /]">
+                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» ' /]">
                         <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -613,22 +601,26 @@ A<?xml version="1.0" encoding="UTF-8"?>
                       <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                     </style>
                   </subContainerMappings>
-                  <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
-                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                  </style>
-                </subContainerMappings>
-                <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]">
+                  <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
+                <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
+                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                    <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  </style>
+                </subContainerMappings>
+                <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
               <subContainerMappings name="ViewComponentProva" label="View Component" semanticCandidatesExpression="[viewElements/]" domainClass="ViewComponent" childrenPresentation="List">
@@ -637,13 +629,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -667,7 +659,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
                   </style>
                 </subContainerMappings>
                 <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]">
+                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -682,23 +674,25 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 </style>
               </subContainerMappings>
               <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]">
+                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
-              <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
+              <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Definition» '+self.name/]">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['Â«Module DefinitionÂ» '+self.name/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subContainerMappings>
           <subContainerMappings name="InternalModulePackage" semanticCandidatesExpression="[modularizationElements/]" domainClass="ModulePackage">
@@ -724,13 +718,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </borderedNodeMappings>
-                <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['«Action» ' + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="7" arcHeight="10" roundedCorner="true" workspacePath="/IFMLEditorDesign/img/components/action3.png">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['Â«ActionÂ» ' + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="7" arcHeight="10" roundedCorner="true" workspacePath="/IFMLEditorDesign/img/components/action3.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </subNodeMappings>
               <subNodeMappings name="ActivationExpression" semanticCandidatesExpression="[self.interactionFlowModelElement/]" domainClass="ActivationExpression">
-                <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['«Activation Expression»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
+                <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['Â«Activation ExpressionÂ»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -741,13 +735,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
-                <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«JumpEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«JumpEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/JumpEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«SetContextEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«SetContextEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SetContextEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -759,20 +753,20 @@ A<?xml version="1.0" encoding="UTF-8"?>
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
-                <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«SystemEvent» ' /]">
+                <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«SystemEventÂ» ' /]">
                   <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.getSystemEvent()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SystemEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«OnLoadEvent» ' /]">
+                <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«OnLoadEventÂ» ' /]">
                   <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.getSystemEvent() + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnLoadEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«LandingEvent» '/]">
-                  <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['«LandingEvent» ' + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LandingEvent.png">
+                <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«LandingEventÂ» '/]">
+                  <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['Â«LandingEventÂ» ' + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LandingEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
@@ -786,13 +780,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       </style>
-                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                         <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         </style>
                       </conditionnalStyles>
-                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» ' /]">
+                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» ' /]">
                         <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -829,13 +823,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         </style>
-                        <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                        <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                           <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           </style>
                         </conditionnalStyles>
-                        <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» ' /]">
+                        <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» ' /]">
                           <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -865,14 +859,18 @@ A<?xml version="1.0" encoding="UTF-8"?>
                         <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                       </style>
                     </subContainerMappings>
-                    <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
+                    <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                      <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     </style>
                   </subContainerMappings>
-                  <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
+                  <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                    <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   </style>
                 </subContainerMappings>
                 <subContainerMappings name="ViewComponent" label="View Component" semanticCandidatesExpression="[viewElements/]" domainClass="ViewComponent" childrenPresentation="List">
@@ -881,13 +879,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
-                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                       <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       </style>
                     </conditionnalStyles>
-                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» '/]">
+                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» '/]">
                       <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -917,12 +915,14 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
+                <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
-              <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Definition» '+self.name/]">
+              <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['Â«Module DefinitionÂ» '+self.name/]">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -952,13 +952,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </borderedNodeMappings>
-                  <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['«Action» ' + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="7" arcHeight="10" roundedCorner="true" workspacePath="/IFMLEditorDesign/img/components/action3.png">
+                  <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['Â«ActionÂ» ' + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="7" arcHeight="10" roundedCorner="true" workspacePath="/IFMLEditorDesign/img/components/action3.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </subNodeMappings>
                 <subNodeMappings name="ActivationExpression" semanticCandidatesExpression="[self.interactionFlowModelElement/]" domainClass="ActivationExpression">
-                  <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['«Activation Expression»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
+                  <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['Â«Activation ExpressionÂ»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -969,13 +969,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
-                  <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«JumpEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«JumpEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/JumpEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«SetContextEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«SetContextEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SetContextEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -987,20 +987,20 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
-                  <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«SystemEvent» ' /]">
+                  <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«SystemEventÂ» ' /]">
                     <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.getSystemEvent()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SystemEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«OnLoadEvent» ' /]">
+                  <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«OnLoadEventÂ» ' /]">
                     <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.getSystemEvent() + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnLoadEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«LandingEvent» '/]">
-                    <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['«LandingEvent» ' + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LandingEvent.png">
+                  <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«LandingEventÂ» '/]">
+                    <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['Â«LandingEventÂ» ' + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LandingEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
@@ -1014,13 +1014,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         </style>
-                        <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                        <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                           <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           </style>
                         </conditionnalStyles>
-                        <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» ' /]">
+                        <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» ' /]">
                           <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -1057,13 +1057,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           </style>
-                          <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                          <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                             <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                             </style>
                           </conditionnalStyles>
-                          <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» ' /]">
+                          <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» ' /]">
                             <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -1113,13 +1113,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       </style>
-                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                         <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         </style>
                       </conditionnalStyles>
-                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» '/]">
+                      <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» '/]">
                         <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -1132,15 +1132,15 @@ A<?xml version="1.0" encoding="UTF-8"?>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                       </style>
-                      <conditionnalStyles predicateExpression="[self.getViewComponentPartLabel() = '«DataBinding» '/]">
-                        <style xsi:type="style:SquareDescription" labelSize="9" showIcon="false" labelExpression="['«DataBinding» ' + self.name/]" labelPosition="node" resizeKind="NSEW">
+                      <conditionnalStyles predicateExpression="[self.getViewComponentPartLabel() = 'Â«DataBindingÂ» '/]">
+                        <style xsi:type="style:SquareDescription" labelSize="9" showIcon="false" labelExpression="['Â«DataBindingÂ» ' + self.name/]" labelPosition="node" resizeKind="NSEW">
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
                         </style>
                       </conditionnalStyles>
-                      <conditionnalStyles predicateExpression="[self.getViewComponentPartLabel() = '«ConditionalExpression» '/]">
-                        <style xsi:type="style:SquareDescription" labelSize="9" showIcon="false" labelExpression="['«ConditionalExpression» ' + self.name/]" labelPosition="node" resizeKind="NSEW">
+                      <conditionnalStyles predicateExpression="[self.getViewComponentPartLabel() = 'Â«ConditionalExpressionÂ» '/]">
+                        <style xsi:type="style:SquareDescription" labelSize="9" showIcon="false" labelExpression="['Â«ConditionalExpressionÂ» ' + self.name/]" labelPosition="node" resizeKind="NSEW">
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -1161,28 +1161,28 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Definition» '+self.name/]">
+                <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['Â«Module DefinitionÂ» '+self.name/]">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
-              <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Package»' + self.name/]">
+              <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['Â«Module PackageÂ»' + self.name/]">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Package»' + self.name/]">
+            <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['Â«Module PackageÂ»' + self.name/]">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Package»' + self.name/]">
+          <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['Â«Module PackageÂ»' + self.name/]">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -1191,14 +1191,14 @@ A<?xml version="1.0" encoding="UTF-8"?>
         </containerMappings>
         <containerMappings name="ModuleDefinition" semanticCandidatesExpression="[self.interactionFlowModel.interactionFlowModelElements/]" domainClass="ModuleDefinition">
           <borderedNodeMappings name="InputPort" semanticCandidatesExpression="[self.inputPorts/]" domainClass="PortDefinition">
-            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="[self.name/]" resizeKind="NSEW">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </borderedNodeMappings>
           <borderedNodeMappings name="OutputPort" semanticCandidatesExpression="[self.outputPorts/]" domainClass="PortDefinition">
-            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="[self.name/]" resizeKind="NSEW">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -1211,13 +1211,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </borderedNodeMappings>
-            <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getActionLabel() + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="7" arcHeight="10" roundedCorner="true" workspacePath="/IFMLEditorDesign/img/components/Action.png">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['Â«ActionÂ» ' + self.name/]" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="7" arcHeight="10" roundedCorner="true" workspacePath="/IFMLEditorDesign/img/components/Action.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </subNodeMappings>
           <subNodeMappings name="ActivationExpression" semanticCandidatesExpression="[self.interactionFlowModelElement/]" domainClass="ActivationExpression">
-            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['«Activation Expression»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="['Â«Activation ExpressionÂ»' /]" sizeComputationExpression="" labelPosition="node" resizeKind="NSEW" width="12" height="5">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -1228,13 +1228,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
-            <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«JumpEvent» '/]">
+            <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«JumpEventÂ» '/]">
               <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/JumpEvent.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
-            <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = '«SetContextEvent» '/]">
+            <conditionnalStyles predicateExpression="[self.getThrowingEventLabel() = 'Â«SetContextEventÂ» '/]">
               <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.getThrowingEventLabel()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SetContextEvent.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -1246,20 +1246,20 @@ A<?xml version="1.0" encoding="UTF-8"?>
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
-            <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«SystemEvent» ' /]">
+            <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«SystemEventÂ» ' /]">
               <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.getSystemEvent()+ self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SystemEvent.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
-            <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«OnLoadEvent» ' /]">
+            <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«OnLoadEventÂ» ' /]">
               <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.getSystemEvent() + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnLoadEvent.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
-            <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = '«LandingEvent» '/]">
-              <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['«LandingEvent» ' + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LandingEvent.png">
+            <conditionnalStyles predicateExpression="[self.getCatchingEventLabel() = 'Â«LandingEventÂ» '/]">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="['Â«LandingEventÂ» ' + self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LandingEvent.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
@@ -1273,37 +1273,37 @@ A<?xml version="1.0" encoding="UTF-8"?>
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«TapEvent» ' /]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«TapEventÂ» ' /]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/ViewElementEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«LongPressEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«LongPressEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LongPressEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«PinchEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«PinchEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/PinchEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
                   </conditionnalStyles>
-                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«SpreadEvent» '/]">
+                  <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«SpreadEventÂ» '/]">
                     <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SpreadEvent.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -1313,15 +1313,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 <subContainerMappings name="ViewComponentPart" semanticCandidatesExpression="[viewComponentParts/]" domainClass="ViewComponentPart">
                   <subContainerMappings name="InternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
                     <subContainerMappings name="DoubleInternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
-                      <subContainerMappings name="DoubleInternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
-                        <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
-                          <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                          <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                        </style>
-                      </subContainerMappings>
-                      <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                      <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -1335,7 +1327,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
                       <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     </style>
                   </subContainerMappings>
-                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -1343,7 +1335,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
                   </style>
                 </subContainerMappings>
                 <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -1364,13 +1356,13 @@ A<?xml version="1.0" encoding="UTF-8"?>
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     </style>
-                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                       <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       </style>
                     </conditionnalStyles>
-                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» ' /]">
+                    <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» ' /]">
                       <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -1380,50 +1372,54 @@ A<?xml version="1.0" encoding="UTF-8"?>
                   <subContainerMappings name="DoubleInternalViewComponentPart" semanticCandidatesExpression="[viewComponentParts/]" domainClass="ViewComponentPart">
                     <subContainerMappings name="InternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
                       <subContainerMappings name="DoubleInternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
-                        <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                        <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                           <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                           <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                         </style>
                       </subContainerMappings>
-                      <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                      <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                         <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                         <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                         <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                       </style>
                     </subContainerMappings>
-                    <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                    <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                       <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     </style>
                   </subContainerMappings>
-                  <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="9" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true" widthComputationExpression="25" heightComputationExpression="12">
+                  <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="9" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
-                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                </style>
-              </subContainerMappings>
-              <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
-              <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
+              <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
+                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                </style>
+              </subContainerMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subContainerMappings>
             <subContainerMappings name="ViewComponent" label="View Component" semanticCandidatesExpression="[viewElements/]" domainClass="ViewComponent">
@@ -1432,37 +1428,37 @@ A<?xml version="1.0" encoding="UTF-8"?>
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSelectEvent» ' /]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSelectEventÂ» ' /]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSelectEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«OnSubmitEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«OnSubmitEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/OnSubmitEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«TapEvent» ' /]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«TapEventÂ» ' /]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/ViewElementEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«LongPressEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«LongPressEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/LongPressEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«PinchEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«PinchEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/PinchEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   </style>
                 </conditionnalStyles>
-                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = '«SpreadEvent» '/]">
+                <conditionnalStyles predicateExpression="[self.getViewElementEvent() = 'Â«SpreadEventÂ» '/]">
                   <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="[self.name/]" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/IFMLEditorDesign/img/components/SpreadEvent.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -1472,21 +1468,21 @@ A<?xml version="1.0" encoding="UTF-8"?>
               <subContainerMappings name="ViewComponentPart" semanticCandidatesExpression="[viewComponentParts/]" domainClass="ViewComponentPart">
                 <subContainerMappings name="InternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
                   <subContainerMappings name="DoubleInternalViewComponentPart" semanticCandidatesExpression="[subViewComponentParts/]" domainClass="ViewComponentPart">
-                    <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                    <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                       <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     </style>
                   </subContainerMappings>
-                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                  <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="[getViewComponentPartLabel()+' '+ self.name/]">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -1494,14 +1490,14 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 </style>
               </subContainerMappings>
               <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]" widthComputationExpression="20" heightComputationExpression="3">
+                <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
-              <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="9" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true" widthComputationExpression="25" heightComputationExpression="12">
+              <style xsi:type="style:FlatContainerStyleDescription" arcWidth="30" arcHeight="30" labelSize="9" showIcon="false" labelExpression="[getViewComponentLabel() + self.name/]" roundedCorner="true">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -1509,7 +1505,7 @@ A<?xml version="1.0" encoding="UTF-8"?>
               </style>
             </subContainerMappings>
             <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
-              <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['«Parameter» '+ self.name +' : '+ self.type.name/]">
+              <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="['Â«ParameterÂ» '+ self.name +' : '+ self.type.name/]">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -1521,11 +1517,11 @@ A<?xml version="1.0" encoding="UTF-8"?>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Definition» '+self.name/]">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['Â«Module DefinitionÂ» '+self.name/]">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
           </style>
         </containerMappings>
         <toolSections name="CorePalette" label="Core">
@@ -1643,6 +1639,15 @@ A<?xml version="1.0" encoding="UTF-8"?>
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="ViewElementEvent" referenceName="viewElementEvents">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['ViewElementEvent'/]"/>
                 </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ViewComponentPartCreation" label="ViewComponentPart" nodeMappings="//@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='InternalModulePackage']/@subContainerMappings[name='DoubleInternalModulePackage']/@subContainerMappings[name='DoubleInternalModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponentProva']/@subNodeMappings[name='ViewComponentPart']" iconPath="/IFMLEditorDesign/img/icons/view_component_part_obj.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="ViewComponentPart" referenceName="viewComponentParts">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['View Component Part'/]"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -2524,34 +2529,6 @@ A<?xml version="1.0" encoding="UTF-8"?>
                         </subModelOperations>
                       </subModelOperations>
                     </default>
-                  </subModelOperations>
-                </cases>
-                <cases conditionExpression="[self.isViewContainer()/]">
-                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Screen" referenceName="viewElements">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['Screen'/]"/>
-                    </subModelOperations>
-                  </subModelOperations>
-                </cases>
-                <cases conditionExpression="[container.isWindow()/]">
-                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Screen" referenceName="viewElements">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['Screen'/]"/>
-                    </subModelOperations>
-                  </subModelOperations>
-                </cases>
-                <cases conditionExpression="[container.isMenu()/]">
-                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Screen" referenceName="viewElements">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['Screen'/]"/>
-                    </subModelOperations>
-                  </subModelOperations>
-                </cases>
-                <cases conditionExpression="[container.isScreen()/]">
-                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
-                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Screen" referenceName="viewElements">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['Screen'/]"/>
-                    </subModelOperations>
                   </subModelOperations>
                 </cases>
                 <cases conditionExpression="[container.isModuleDefinition()/]">
