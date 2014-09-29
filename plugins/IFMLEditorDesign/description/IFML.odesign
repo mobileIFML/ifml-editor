@@ -601,11 +601,9 @@
                       <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                     </style>
                   </subContainerMappings>
-                  <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
+                  <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                    <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                    <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   </style>
                 </subContainerMappings>
                 <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
@@ -616,11 +614,9 @@
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
+                <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
               <subContainerMappings name="ViewComponentProva" label="View Component" semanticCandidatesExpression="[viewElements/]" domainClass="ViewComponent" childrenPresentation="List">
@@ -681,18 +677,16 @@
                   <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
-              <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
+              <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subContainerMappings>
             <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Definition» '+self.name/]">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
           <subContainerMappings name="InternalModulePackage" semanticCandidatesExpression="[modularizationElements/]" domainClass="ModulePackage">
@@ -859,18 +853,14 @@
                         <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                       </style>
                     </subContainerMappings>
-                    <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
+                    <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                      <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                      <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                     </style>
                   </subContainerMappings>
-                  <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
+                  <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                    <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                    <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                   </style>
                 </subContainerMappings>
                 <subContainerMappings name="ViewComponent" label="View Component" semanticCandidatesExpression="[viewElements/]" domainClass="ViewComponent" childrenPresentation="List">
@@ -915,11 +905,9 @@
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
+                <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
               <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Definition» '+self.name/]">
@@ -1191,14 +1179,14 @@
         </containerMappings>
         <containerMappings name="ModuleDefinition" semanticCandidatesExpression="[self.interactionFlowModel.interactionFlowModelElements/]" domainClass="ModuleDefinition">
           <borderedNodeMappings name="InputPort" semanticCandidatesExpression="[self.inputPorts/]" domainClass="PortDefinition">
-            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="" resizeKind="NSEW">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="[self.name/]" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </borderedNodeMappings>
           <borderedNodeMappings name="OutputPort" semanticCandidatesExpression="[self.outputPorts/]" domainClass="PortDefinition">
-            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="" resizeKind="NSEW">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="[self.name/]" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -1408,11 +1396,9 @@
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
+                <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
               <subContainerMappings name="IFMLParameter" semanticCandidatesExpression="[parameters/]" domainClass="IFMLParameter">
@@ -1423,11 +1409,9 @@
                   <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
                 </style>
               </subContainerMappings>
-              <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.getExtContainer() + self.name/]">
+              <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="[getViewContainerLabel()+' '+ self.name/]" labelAlignment="LEFT" workspacePath="/IFMLEditorDesign/img/components/ViewContainer.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </style>
             </subContainerMappings>
             <subContainerMappings name="ViewComponent" label="View Component" semanticCandidatesExpression="[viewElements/]" domainClass="ViewComponent">
@@ -1526,10 +1510,10 @@
             </style>
           </subContainerMappings>
           <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="['«Module Definition» '+self.name/]">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
         <toolSections name="CorePalette" label="Core">
@@ -1647,15 +1631,6 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="ViewElementEvent" referenceName="viewElementEvents">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['ViewElementEvent'/]"/>
                 </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="ViewComponentPartCreation" label="ViewComponentPart" nodeMappings="//@ownedViewpoints[name='IFML%20Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModulePackage']/@subContainerMappings[name='InternalModulePackage']/@subContainerMappings[name='DoubleInternalModulePackage']/@subContainerMappings[name='DoubleInternalModuleDefinition']/@subContainerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponentProva']/@subNodeMappings[name='ViewComponentPart']" iconPath="/IFMLEditorDesign/img/icons/view_component_part_obj.png">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="ViewComponentPart" referenceName="viewComponentParts">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['View Component Part'/]"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
