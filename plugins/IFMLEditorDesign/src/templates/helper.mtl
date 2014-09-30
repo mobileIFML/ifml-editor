@@ -608,3 +608,28 @@ endif
 	else 'Port Definition: ' + port.portDefinition.name
 	endif
 /]
+[query public getVisualizationAttributeLabel(aVisualizationAttribute:VisualizationAttribute) : String =
+if (aVisualizationAttribute.featureConcept.oclAsType(UMLStructuralFeature).structuralFeature.type.name.oclIsUndefined())
+then self.getViewComponentPartLabel()+' '+ self.name + ':'+' '+'Invalid FeatureConcept'
+else 
+self.getViewComponentPartLabel()+' '+ self.name + ':'+' '+self.featureConcept.oclAsType(UMLStructuralFeature).structuralFeature.type.name
+endif
+/]
+[query public getIFMLParameterLabel(aParameter:IFMLParameter) : String =
+if (aParameter.type.name.oclIsUndefined())
+then '«Parameter»' + self.name + ':'+' '+ 'Invalid Type'
+else '«Parameter»' + self.name + ':'+' '+self.type.name
+endif
+/]
+[query public isIFMLParameter(o:OclAny) : Boolean = 
+	if(o.oclIsKindOf(IFMLParameter))
+	then true
+	else false
+	endif
+/]
+[query public isVisualizationAttribute(o:OclAny) : Boolean = 
+	if(o.oclIsTypeOf(VisualizationAttribute))
+	then true
+	else false
+	endif
+/]
