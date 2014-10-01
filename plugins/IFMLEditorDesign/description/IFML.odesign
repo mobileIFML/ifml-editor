@@ -2339,7 +2339,9 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="ActionEvent" referenceName="actionEvents"/>
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="ActionEvent" referenceName="actionEvents">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['Action Event'/]"/>
+                </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
