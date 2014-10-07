@@ -64,11 +64,34 @@ public class CoreSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case CorePackage.INTERACTION_FLOW: {
-				InteractionFlow interactionFlow = (InteractionFlow)theEObject;
-				T result = caseInteractionFlow(interactionFlow);
-				if (result == null) result = caseInteractionFlowModelElement(interactionFlow);
-				if (result == null) result = caseElement(interactionFlow);
+			case CorePackage.ACTION_EVENT: {
+				ActionEvent actionEvent = (ActionEvent)theEObject;
+				T result = caseActionEvent(actionEvent);
+				if (result == null) result = caseCatchingEvent(actionEvent);
+				if (result == null) result = caseEvent(actionEvent);
+				if (result == null) result = caseInteractionFlowElement(actionEvent);
+				if (result == null) result = caseNamedElement(actionEvent);
+				if (result == null) result = caseInteractionFlowModelElement(actionEvent);
+				if (result == null) result = caseElement(actionEvent);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.CONTENT_BINDING: {
+				ContentBinding contentBinding = (ContentBinding)theEObject;
+				T result = caseContentBinding(contentBinding);
+				if (result == null) result = caseViewComponentPart(contentBinding);
+				if (result == null) result = caseInteractionFlowElement(contentBinding);
+				if (result == null) result = caseNamedElement(contentBinding);
+				if (result == null) result = caseInteractionFlowModelElement(contentBinding);
+				if (result == null) result = caseElement(contentBinding);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.DOMAIN_MODEL: {
+				DomainModel domainModel = (DomainModel)theEObject;
+				T result = caseDomainModel(domainModel);
+				if (result == null) result = caseNamedElement(domainModel);
+				if (result == null) result = caseElement(domainModel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -78,6 +101,14 @@ public class CoreSwitch<T> extends Switch<T> {
 				if (result == null) result = caseExpression(interactionFlowExpression);
 				if (result == null) result = caseInteractionFlowModelElement(interactionFlowExpression);
 				if (result == null) result = caseElement(interactionFlowExpression);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.INTERACTION_FLOW: {
+				InteractionFlow interactionFlow = (InteractionFlow)theEObject;
+				T result = caseInteractionFlow(interactionFlow);
+				if (result == null) result = caseInteractionFlowModelElement(interactionFlow);
+				if (result == null) result = caseElement(interactionFlow);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -101,26 +132,6 @@ public class CoreSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CorePackage.ACTION_EVENT: {
-				ActionEvent actionEvent = (ActionEvent)theEObject;
-				T result = caseActionEvent(actionEvent);
-				if (result == null) result = caseCatchingEvent(actionEvent);
-				if (result == null) result = caseEvent(actionEvent);
-				if (result == null) result = caseInteractionFlowElement(actionEvent);
-				if (result == null) result = caseNamedElement(actionEvent);
-				if (result == null) result = caseInteractionFlowModelElement(actionEvent);
-				if (result == null) result = caseElement(actionEvent);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case CorePackage.DOMAIN_MODEL: {
-				DomainModel domainModel = (DomainModel)theEObject;
-				T result = caseDomainModel(domainModel);
-				if (result == null) result = caseNamedElement(domainModel);
-				if (result == null) result = caseElement(domainModel);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case CorePackage.NAMED_ELEMENT: {
 				NamedElement namedElement = (NamedElement)theEObject;
 				T result = caseNamedElement(namedElement);
@@ -135,17 +146,6 @@ public class CoreSwitch<T> extends Switch<T> {
 				if (result == null) result = caseNamedElement(portDefinition);
 				if (result == null) result = caseInteractionFlowModelElement(portDefinition);
 				if (result == null) result = caseElement(portDefinition);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case CorePackage.CONTENT_BINDING: {
-				ContentBinding contentBinding = (ContentBinding)theEObject;
-				T result = caseContentBinding(contentBinding);
-				if (result == null) result = caseViewComponentPart(contentBinding);
-				if (result == null) result = caseInteractionFlowElement(contentBinding);
-				if (result == null) result = caseNamedElement(contentBinding);
-				if (result == null) result = caseInteractionFlowModelElement(contentBinding);
-				if (result == null) result = caseElement(contentBinding);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

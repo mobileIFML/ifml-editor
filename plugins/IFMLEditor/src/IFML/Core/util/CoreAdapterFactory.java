@@ -65,12 +65,24 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	protected CoreSwitch<Adapter> modelSwitch =
 		new CoreSwitch<Adapter>() {
 			@Override
-			public Adapter caseInteractionFlow(InteractionFlow object) {
-				return createInteractionFlowAdapter();
+			public Adapter caseActionEvent(ActionEvent object) {
+				return createActionEventAdapter();
+			}
+			@Override
+			public Adapter caseContentBinding(ContentBinding object) {
+				return createContentBindingAdapter();
+			}
+			@Override
+			public Adapter caseDomainModel(DomainModel object) {
+				return createDomainModelAdapter();
 			}
 			@Override
 			public Adapter caseInteractionFlowExpression(InteractionFlowExpression object) {
 				return createInteractionFlowExpressionAdapter();
+			}
+			@Override
+			public Adapter caseInteractionFlow(InteractionFlow object) {
+				return createInteractionFlowAdapter();
 			}
 			@Override
 			public Adapter caseSystemEvent(SystemEvent object) {
@@ -81,24 +93,12 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 				return createParameterBindingAdapter();
 			}
 			@Override
-			public Adapter caseActionEvent(ActionEvent object) {
-				return createActionEventAdapter();
-			}
-			@Override
-			public Adapter caseDomainModel(DomainModel object) {
-				return createDomainModelAdapter();
-			}
-			@Override
 			public Adapter caseNamedElement(NamedElement object) {
 				return createNamedElementAdapter();
 			}
 			@Override
 			public Adapter casePortDefinition(PortDefinition object) {
 				return createPortDefinitionAdapter();
-			}
-			@Override
-			public Adapter caseContentBinding(ContentBinding object) {
-				return createContentBindingAdapter();
 			}
 			@Override
 			public Adapter caseViewElement(ViewElement object) {

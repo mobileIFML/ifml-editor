@@ -121,51 +121,6 @@ public interface CorePackage extends EPackage {
 	int INTERACTION_FLOW_MODEL_ELEMENT = 35;
 
 	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_MODEL_ELEMENT__ID = ELEMENT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_MODEL_ELEMENT__CONSTRAINTS = ELEMENT__CONSTRAINTS;
-
-	/**
-	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_MODEL_ELEMENT__ANNOTATIONS = ELEMENT__ANNOTATIONS;
-
-	/**
-	 * The number of structural features of the '<em>Interaction Flow Model Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Interaction Flow Model Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_MODEL_ELEMENT_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link IFML.Core.impl.InteractionFlowImpl <em>Interaction Flow</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -173,79 +128,7 @@ public interface CorePackage extends EPackage {
 	 * @see IFML.Core.impl.CorePackageImpl#getInteractionFlow()
 	 * @generated
 	 */
-	int INTERACTION_FLOW = 0;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW__ID = INTERACTION_FLOW_MODEL_ELEMENT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW__CONSTRAINTS = INTERACTION_FLOW_MODEL_ELEMENT__CONSTRAINTS;
-
-	/**
-	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW__ANNOTATIONS = INTERACTION_FLOW_MODEL_ELEMENT__ANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Parameter Binding Group</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW__PARAMETER_BINDING_GROUP = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Source Interaction Flow Element</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW__SOURCE_INTERACTION_FLOW_ELEMENT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Target Interaction Flow Element</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW__TARGET_INTERACTION_FLOW_ELEMENT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of structural features of the '<em>Interaction Flow</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_FEATURE_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of operations of the '<em>Interaction Flow</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_OPERATION_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_OPERATION_COUNT + 0;
+	int INTERACTION_FLOW = 4;
 
 	/**
 	 * The meta object id for the '{@link IFML.Core.impl.ExpressionImpl <em>Expression</em>}' class.
@@ -258,69 +141,6 @@ public interface CorePackage extends EPackage {
 	int EXPRESSION = 10;
 
 	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPRESSION__ID = INTERACTION_FLOW_MODEL_ELEMENT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPRESSION__CONSTRAINTS = INTERACTION_FLOW_MODEL_ELEMENT__CONSTRAINTS;
-
-	/**
-	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPRESSION__ANNOTATIONS = INTERACTION_FLOW_MODEL_ELEMENT__ANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Language</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPRESSION__LANGUAGE = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Body</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPRESSION__BODY = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Expression</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPRESSION_FEATURE_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Expression</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPRESSION_OPERATION_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link IFML.Core.impl.InteractionFlowExpressionImpl <em>Interaction Flow Expression</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -328,79 +148,7 @@ public interface CorePackage extends EPackage {
 	 * @see IFML.Core.impl.CorePackageImpl#getInteractionFlowExpression()
 	 * @generated
 	 */
-	int INTERACTION_FLOW_EXPRESSION = 1;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_EXPRESSION__ID = EXPRESSION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_EXPRESSION__CONSTRAINTS = EXPRESSION__CONSTRAINTS;
-
-	/**
-	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_EXPRESSION__ANNOTATIONS = EXPRESSION__ANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Language</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_EXPRESSION__LANGUAGE = EXPRESSION__LANGUAGE;
-
-	/**
-	 * The feature id for the '<em><b>Body</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_EXPRESSION__BODY = EXPRESSION__BODY;
-
-	/**
-	 * The feature id for the '<em><b>Interaction Flow</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_EXPRESSION__INTERACTION_FLOW = EXPRESSION_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Interaction Flow Expression</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Interaction Flow Expression</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERACTION_FLOW_EXPRESSION_OPERATION_COUNT = EXPRESSION_OPERATION_COUNT + 0;
+	int INTERACTION_FLOW_EXPRESSION = 3;
 
 	/**
 	 * The meta object id for the '{@link IFML.Core.impl.NamedElementImpl <em>Named Element</em>}' class.
@@ -410,7 +158,7 @@ public interface CorePackage extends EPackage {
 	 * @see IFML.Core.impl.CorePackageImpl#getNamedElement()
 	 * @generated
 	 */
-	int NAMED_ELEMENT = 6;
+	int NAMED_ELEMENT = 7;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -783,124 +531,7 @@ public interface CorePackage extends EPackage {
 	 * @see IFML.Core.impl.CorePackageImpl#getSystemEvent()
 	 * @generated
 	 */
-	int SYSTEM_EVENT = 2;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__ID = CATCHING_EVENT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__CONSTRAINTS = CATCHING_EVENT__CONSTRAINTS;
-
-	/**
-	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__ANNOTATIONS = CATCHING_EVENT__ANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__NAME = CATCHING_EVENT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__PARAMETERS = CATCHING_EVENT__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__OUT_INTERACTION_FLOWS = CATCHING_EVENT__OUT_INTERACTION_FLOWS;
-
-	/**
-	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__IN_INTERACTION_FLOWS = CATCHING_EVENT__IN_INTERACTION_FLOWS;
-
-	/**
-	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__ACTIVATION_EXPRESSION = CATCHING_EVENT__ACTIVATION_EXPRESSION;
-
-	/**
-	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__INTERACTION_FLOW_EXPRESSION = CATCHING_EVENT__INTERACTION_FLOW_EXPRESSION;
-
-	/**
-	 * The feature id for the '<em><b>Triggering Expressions</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__TRIGGERING_EXPRESSIONS = CATCHING_EVENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT__TYPE = CATCHING_EVENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>System Event</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT_FEATURE_COUNT = CATCHING_EVENT_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>System Event</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_EVENT_OPERATION_COUNT = CATCHING_EVENT_OPERATION_COUNT + 0;
+	int SYSTEM_EVENT = 5;
 
 	/**
 	 * The meta object id for the '{@link IFML.Core.impl.ParameterBindingImpl <em>Parameter Binding</em>}' class.
@@ -910,70 +541,7 @@ public interface CorePackage extends EPackage {
 	 * @see IFML.Core.impl.CorePackageImpl#getParameterBinding()
 	 * @generated
 	 */
-	int PARAMETER_BINDING = 3;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_BINDING__ID = INTERACTION_FLOW_MODEL_ELEMENT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_BINDING__CONSTRAINTS = INTERACTION_FLOW_MODEL_ELEMENT__CONSTRAINTS;
-
-	/**
-	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_BINDING__ANNOTATIONS = INTERACTION_FLOW_MODEL_ELEMENT__ANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Source Parameter</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_BINDING__SOURCE_PARAMETER = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Target Parameter</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_BINDING__TARGET_PARAMETER = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Parameter Binding</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_BINDING_FEATURE_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Parameter Binding</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_BINDING_OPERATION_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_OPERATION_COUNT + 0;
+	int PARAMETER_BINDING = 6;
 
 	/**
 	 * The meta object id for the '{@link IFML.Core.impl.ActionEventImpl <em>Action Event</em>}' class.
@@ -983,7 +551,7 @@ public interface CorePackage extends EPackage {
 	 * @see IFML.Core.impl.CorePackageImpl#getActionEvent()
 	 * @generated
 	 */
-	int ACTION_EVENT = 4;
+	int ACTION_EVENT = 0;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1092,70 +660,7 @@ public interface CorePackage extends EPackage {
 	 * @see IFML.Core.impl.CorePackageImpl#getDomainModel()
 	 * @generated
 	 */
-	int DOMAIN_MODEL = 5;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN_MODEL__ID = NAMED_ELEMENT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN_MODEL__CONSTRAINTS = NAMED_ELEMENT__CONSTRAINTS;
-
-	/**
-	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN_MODEL__ANNOTATIONS = NAMED_ELEMENT__ANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN_MODEL__NAME = NAMED_ELEMENT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Domain Elements</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN_MODEL__DOMAIN_ELEMENTS = NAMED_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Domain Model</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN_MODEL_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Domain Model</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN_MODEL_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
+	int DOMAIN_MODEL = 2;
 
 	/**
 	 * The meta object id for the '{@link IFML.Core.impl.PortDefinitionImpl <em>Port Definition</em>}' class.
@@ -1165,97 +670,7 @@ public interface CorePackage extends EPackage {
 	 * @see IFML.Core.impl.CorePackageImpl#getPortDefinition()
 	 * @generated
 	 */
-	int PORT_DEFINITION = 7;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION__ID = INTERACTION_FLOW_ELEMENT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION__CONSTRAINTS = INTERACTION_FLOW_ELEMENT__CONSTRAINTS;
-
-	/**
-	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION__ANNOTATIONS = INTERACTION_FLOW_ELEMENT__ANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION__NAME = INTERACTION_FLOW_ELEMENT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION__PARAMETERS = INTERACTION_FLOW_ELEMENT__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION__OUT_INTERACTION_FLOWS = INTERACTION_FLOW_ELEMENT__OUT_INTERACTION_FLOWS;
-
-	/**
-	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION__IN_INTERACTION_FLOWS = INTERACTION_FLOW_ELEMENT__IN_INTERACTION_FLOWS;
-
-	/**
-	 * The feature id for the '<em><b>Ports</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION__PORTS = INTERACTION_FLOW_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Port Definition</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION_FEATURE_COUNT = INTERACTION_FLOW_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Port Definition</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_DEFINITION_OPERATION_COUNT = INTERACTION_FLOW_ELEMENT_OPERATION_COUNT + 0;
+	int PORT_DEFINITION = 8;
 
 	/**
 	 * The meta object id for the '{@link IFML.Core.impl.ViewComponentPartImpl <em>View Component Part</em>}' class.
@@ -1392,7 +807,7 @@ public interface CorePackage extends EPackage {
 	 * @see IFML.Core.impl.CorePackageImpl#getContentBinding()
 	 * @generated
 	 */
-	int CONTENT_BINDING = 8;
+	int CONTENT_BINDING = 1;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1519,6 +934,591 @@ public interface CorePackage extends EPackage {
 	 * @ordered
 	 */
 	int CONTENT_BINDING_OPERATION_COUNT = VIEW_COMPONENT_PART_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__ID = NAMED_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__CONSTRAINTS = NAMED_ELEMENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__ANNOTATIONS = NAMED_ELEMENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__NAME = NAMED_ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Domain Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__DOMAIN_ELEMENTS = NAMED_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Domain Model</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Domain Model</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_MODEL_ELEMENT__ID = ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_MODEL_ELEMENT__CONSTRAINTS = ELEMENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_MODEL_ELEMENT__ANNOTATIONS = ELEMENT__ANNOTATIONS;
+
+	/**
+	 * The number of structural features of the '<em>Interaction Flow Model Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Interaction Flow Model Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_MODEL_ELEMENT_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION__ID = INTERACTION_FLOW_MODEL_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION__CONSTRAINTS = INTERACTION_FLOW_MODEL_ELEMENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION__ANNOTATIONS = INTERACTION_FLOW_MODEL_ELEMENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION__LANGUAGE = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Body</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION__BODY = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION_FEATURE_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION_OPERATION_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_EXPRESSION__ID = EXPRESSION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_EXPRESSION__CONSTRAINTS = EXPRESSION__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_EXPRESSION__ANNOTATIONS = EXPRESSION__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_EXPRESSION__LANGUAGE = EXPRESSION__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Body</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_EXPRESSION__BODY = EXPRESSION__BODY;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_EXPRESSION__INTERACTION_FLOW = EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Interaction Flow Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Interaction Flow Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_EXPRESSION_OPERATION_COUNT = EXPRESSION_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW__ID = INTERACTION_FLOW_MODEL_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW__CONSTRAINTS = INTERACTION_FLOW_MODEL_ELEMENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW__ANNOTATIONS = INTERACTION_FLOW_MODEL_ELEMENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Parameter Binding Group</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW__PARAMETER_BINDING_GROUP = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Source Interaction Flow Element</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW__SOURCE_INTERACTION_FLOW_ELEMENT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Target Interaction Flow Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW__TARGET_INTERACTION_FLOW_ELEMENT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Interaction Flow</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_FEATURE_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Interaction Flow</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERACTION_FLOW_OPERATION_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__ID = CATCHING_EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__CONSTRAINTS = CATCHING_EVENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__ANNOTATIONS = CATCHING_EVENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__NAME = CATCHING_EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__PARAMETERS = CATCHING_EVENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__OUT_INTERACTION_FLOWS = CATCHING_EVENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__IN_INTERACTION_FLOWS = CATCHING_EVENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__ACTIVATION_EXPRESSION = CATCHING_EVENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__INTERACTION_FLOW_EXPRESSION = CATCHING_EVENT__INTERACTION_FLOW_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Triggering Expressions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__TRIGGERING_EXPRESSIONS = CATCHING_EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT__TYPE = CATCHING_EVENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>System Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT_FEATURE_COUNT = CATCHING_EVENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>System Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_EVENT_OPERATION_COUNT = CATCHING_EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_BINDING__ID = INTERACTION_FLOW_MODEL_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_BINDING__CONSTRAINTS = INTERACTION_FLOW_MODEL_ELEMENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_BINDING__ANNOTATIONS = INTERACTION_FLOW_MODEL_ELEMENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Source Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_BINDING__SOURCE_PARAMETER = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_BINDING__TARGET_PARAMETER = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Parameter Binding</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_BINDING_FEATURE_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Parameter Binding</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_BINDING_OPERATION_COUNT = INTERACTION_FLOW_MODEL_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION__ID = INTERACTION_FLOW_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION__CONSTRAINTS = INTERACTION_FLOW_ELEMENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION__ANNOTATIONS = INTERACTION_FLOW_ELEMENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION__NAME = INTERACTION_FLOW_ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION__PARAMETERS = INTERACTION_FLOW_ELEMENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION__OUT_INTERACTION_FLOWS = INTERACTION_FLOW_ELEMENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION__IN_INTERACTION_FLOWS = INTERACTION_FLOW_ELEMENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Ports</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION__PORTS = INTERACTION_FLOW_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Port Definition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION_FEATURE_COUNT = INTERACTION_FLOW_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Port Definition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_DEFINITION_OPERATION_COUNT = INTERACTION_FLOW_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link IFML.Core.impl.ViewElementImpl <em>View Element</em>}' class.

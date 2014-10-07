@@ -1866,13 +1866,21 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		isCreated = true;
 
 		// Create classes and their features
+		actionEventEClass = createEClass(ACTION_EVENT);
+
+		contentBindingEClass = createEClass(CONTENT_BINDING);
+		createEAttribute(contentBindingEClass, CONTENT_BINDING__UNIFORM_RESOURCE_IDENTIFIER);
+
+		domainModelEClass = createEClass(DOMAIN_MODEL);
+		createEReference(domainModelEClass, DOMAIN_MODEL__DOMAIN_ELEMENTS);
+
+		interactionFlowExpressionEClass = createEClass(INTERACTION_FLOW_EXPRESSION);
+		createEReference(interactionFlowExpressionEClass, INTERACTION_FLOW_EXPRESSION__INTERACTION_FLOW);
+
 		interactionFlowEClass = createEClass(INTERACTION_FLOW);
 		createEReference(interactionFlowEClass, INTERACTION_FLOW__PARAMETER_BINDING_GROUP);
 		createEReference(interactionFlowEClass, INTERACTION_FLOW__SOURCE_INTERACTION_FLOW_ELEMENT);
 		createEReference(interactionFlowEClass, INTERACTION_FLOW__TARGET_INTERACTION_FLOW_ELEMENT);
-
-		interactionFlowExpressionEClass = createEClass(INTERACTION_FLOW_EXPRESSION);
-		createEReference(interactionFlowExpressionEClass, INTERACTION_FLOW_EXPRESSION__INTERACTION_FLOW);
 
 		systemEventEClass = createEClass(SYSTEM_EVENT);
 		createEReference(systemEventEClass, SYSTEM_EVENT__TRIGGERING_EXPRESSIONS);
@@ -1882,19 +1890,11 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		createEReference(parameterBindingEClass, PARAMETER_BINDING__SOURCE_PARAMETER);
 		createEReference(parameterBindingEClass, PARAMETER_BINDING__TARGET_PARAMETER);
 
-		actionEventEClass = createEClass(ACTION_EVENT);
-
-		domainModelEClass = createEClass(DOMAIN_MODEL);
-		createEReference(domainModelEClass, DOMAIN_MODEL__DOMAIN_ELEMENTS);
-
 		namedElementEClass = createEClass(NAMED_ELEMENT);
 		createEAttribute(namedElementEClass, NAMED_ELEMENT__NAME);
 
 		portDefinitionEClass = createEClass(PORT_DEFINITION);
 		createEReference(portDefinitionEClass, PORT_DEFINITION__PORTS);
-
-		contentBindingEClass = createEClass(CONTENT_BINDING);
-		createEAttribute(contentBindingEClass, CONTENT_BINDING__UNIFORM_RESOURCE_IDENTIFIER);
 
 		viewElementEClass = createEClass(VIEW_ELEMENT);
 		createEReference(viewElementEClass, VIEW_ELEMENT__VIEW_ELEMENT_EVENTS);
@@ -2098,15 +2098,15 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		interactionFlowEClass.getESuperTypes().add(this.getInteractionFlowModelElement());
+		actionEventEClass.getESuperTypes().add(this.getCatchingEvent());
+		contentBindingEClass.getESuperTypes().add(this.getViewComponentPart());
+		domainModelEClass.getESuperTypes().add(this.getNamedElement());
 		interactionFlowExpressionEClass.getESuperTypes().add(this.getExpression());
+		interactionFlowEClass.getESuperTypes().add(this.getInteractionFlowModelElement());
 		systemEventEClass.getESuperTypes().add(this.getCatchingEvent());
 		parameterBindingEClass.getESuperTypes().add(this.getInteractionFlowModelElement());
-		actionEventEClass.getESuperTypes().add(this.getCatchingEvent());
-		domainModelEClass.getESuperTypes().add(this.getNamedElement());
 		namedElementEClass.getESuperTypes().add(this.getElement());
 		portDefinitionEClass.getESuperTypes().add(this.getInteractionFlowElement());
-		contentBindingEClass.getESuperTypes().add(this.getViewComponentPart());
 		viewElementEClass.getESuperTypes().add(this.getInteractionFlowElement());
 		expressionEClass.getESuperTypes().add(this.getInteractionFlowModelElement());
 		dynamicBehaviorEClass.getESuperTypes().add(this.getContentBinding());
@@ -2162,13 +2162,21 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		domainElementEClass.getESuperTypes().add(this.getNamedElement());
 
 		// Initialize classes, features, and operations; add parameters
+		initEClass(actionEventEClass, ActionEvent.class, "ActionEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(contentBindingEClass, ContentBinding.class, "ContentBinding", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getContentBinding_UniformResourceIdentifier(), ecorePackage.getEString(), "uniformResourceIdentifier", null, 0, 1, ContentBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(domainModelEClass, DomainModel.class, "DomainModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDomainModel_DomainElements(), this.getDomainElement(), null, "domainElements", null, 0, -1, DomainModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(interactionFlowExpressionEClass, InteractionFlowExpression.class, "InteractionFlowExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getInteractionFlowExpression_InteractionFlow(), this.getInteractionFlow(), null, "interactionFlow", null, 2, -1, InteractionFlowExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
 		initEClass(interactionFlowEClass, InteractionFlow.class, "InteractionFlow", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInteractionFlow_ParameterBindingGroup(), this.getParameterBindingGroup(), null, "parameterBindingGroup", null, 0, 1, InteractionFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInteractionFlow_SourceInteractionFlowElement(), this.getInteractionFlowElement(), this.getInteractionFlowElement_OutInteractionFlows(), "sourceInteractionFlowElement", null, 1, 1, InteractionFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInteractionFlow_TargetInteractionFlowElement(), this.getInteractionFlowElement(), this.getInteractionFlowElement_InInteractionFlows(), "targetInteractionFlowElement", null, 1, 1, InteractionFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(interactionFlowExpressionEClass, InteractionFlowExpression.class, "InteractionFlowExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getInteractionFlowExpression_InteractionFlow(), this.getInteractionFlow(), null, "interactionFlow", null, 2, -1, InteractionFlowExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(systemEventEClass, SystemEvent.class, "SystemEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSystemEvent_TriggeringExpressions(), this.getExpression(), null, "triggeringExpressions", null, 0, -1, SystemEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2178,19 +2186,11 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		initEReference(getParameterBinding_SourceParameter(), this.getIFMLParameter(), null, "sourceParameter", null, 1, 1, ParameterBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getParameterBinding_TargetParameter(), this.getIFMLParameter(), null, "targetParameter", null, 1, 1, ParameterBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(actionEventEClass, ActionEvent.class, "ActionEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(domainModelEClass, DomainModel.class, "DomainModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDomainModel_DomainElements(), this.getDomainElement(), null, "domainElements", null, 0, -1, DomainModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
 		initEClass(namedElementEClass, NamedElement.class, "NamedElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getNamedElement_Name(), ecorePackage.getEString(), "name", null, 1, 1, NamedElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(portDefinitionEClass, PortDefinition.class, "PortDefinition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPortDefinition_Ports(), this.getIFMLPort(), this.getIFMLPort_PortDefinition(), "ports", null, 0, -1, PortDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(contentBindingEClass, ContentBinding.class, "ContentBinding", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getContentBinding_UniformResourceIdentifier(), ecorePackage.getEString(), "uniformResourceIdentifier", null, 0, 1, ContentBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(viewElementEClass, ViewElement.class, "ViewElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getViewElement_ViewElementEvents(), this.getViewElementEvent(), null, "viewElementEvents", null, 0, -1, ViewElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2289,7 +2289,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		initEReference(getContext_ContextVariables(), this.getContextVariable(), this.getContextVariable_Context(), "contextVariables", null, 0, -1, Context.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(visualizationAttributeEClass, VisualizationAttribute.class, "VisualizationAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getVisualizationAttribute_FeatureConcept(), this.getFeatureConcept(), this.getFeatureConcept_VisualizationAttribute(), "featureConcept", null, 1, 1, VisualizationAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getVisualizationAttribute_FeatureConcept(), this.getFeatureConcept(), null, "featureConcept", null, 1, 1, VisualizationAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(eventEClass, Event.class, "Event", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEvent_ActivationExpression(), this.getActivationExpression(), null, "activationExpression", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2336,7 +2336,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		initEReference(getDomainConcept_DataBinding(), this.getDataBinding(), null, "dataBinding", null, 0, 1, DomainConcept.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(featureConceptEClass, FeatureConcept.class, "FeatureConcept", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFeatureConcept_VisualizationAttribute(), this.getVisualizationAttribute(), this.getVisualizationAttribute_FeatureConcept(), "visualizationAttribute", null, 0, 1, FeatureConcept.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getFeatureConcept_VisualizationAttribute(), this.getVisualizationAttribute(), null, "visualizationAttribute", null, 0, 1, FeatureConcept.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(behaviorConceptEClass, BehaviorConcept.class, "BehaviorConcept", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getBehaviorConcept_DynamicBehavior(), this.getDynamicBehavior(), this.getDynamicBehavior_BehaviorConcept(), "dynamicBehavior", null, 0, 1, BehaviorConcept.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

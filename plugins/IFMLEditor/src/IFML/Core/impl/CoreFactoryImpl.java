@@ -56,11 +56,11 @@ public class CoreFactoryImpl extends EFactoryImpl implements CoreFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
+			case CorePackage.ACTION_EVENT: return createActionEvent();
+			case CorePackage.DOMAIN_MODEL: return createDomainModel();
 			case CorePackage.INTERACTION_FLOW_EXPRESSION: return createInteractionFlowExpression();
 			case CorePackage.SYSTEM_EVENT: return createSystemEvent();
 			case CorePackage.PARAMETER_BINDING: return createParameterBinding();
-			case CorePackage.ACTION_EVENT: return createActionEvent();
-			case CorePackage.DOMAIN_MODEL: return createDomainModel();
 			case CorePackage.PORT_DEFINITION: return createPortDefinition();
 			case CorePackage.VIEW_ELEMENT: return createViewElement();
 			case CorePackage.DYNAMIC_BEHAVIOR: return createDynamicBehavior();
