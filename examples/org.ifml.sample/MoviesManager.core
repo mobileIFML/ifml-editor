@@ -1,78 +1,104 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:mobile="http://www.omg.org/spec/20130218/mobile" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_5lSOMD26EeSXR7i73X4dkA">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:mobile="http://www.omg.org/spec/20130218/mobile" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_5lSOMD26EeSXR7i73X4dkA" name="MovieViewer">
   <interactionFlowModel id="_OiRlgD27EeSXR7i73X4dkA">
-    <interactionFlowModelElements xsi:type="mobile:Screen" id="_OiavcD27EeSXR7i73X4dkA" name="AvailableMovies" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.2/@outInteractionFlows.0 #//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0 #//@interactionFlowModel/@interactionFlowModelElements.5/@outInteractionFlows.0 #//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0" isHome="true">
-      <viewElements xsi:type="ext:List" id="_yrw8MD27EeSXR7i73X4dkA" name="MovieList">
-        <parameters id="_ycf_wD89EeSmtIfOU-uKuQ" name="selectedMovie" direction="inout" type="uml:Class model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
+    <interactionFlowModelElements xsi:type="mobile:Screen" id="_OiavcD27EeSXR7i73X4dkA" name="List of movies" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.2/@outInteractionFlows.0 #//@interactionFlowModel/@interactionFlowModelElements.5/@outInteractionFlows.0" isHome="true">
+      <viewElements xsi:type="ext:List" id="_yrw8MD27EeSXR7i73X4dkA" name="MovieList" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0 #//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0">
+        <parameters id="_D4ZUIENKEeSgQ7fed9G_XQ" name="selectedMovie" type="uml:Class model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
         <viewElementEvents xsi:type="mobile:TapEvent" id="_lwne8D28EeSXR7i73X4dkA" name="Add movie">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_Fr8MED29EeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
         </viewElementEvents>
         <viewElementEvents xsi:type="ext:OnSelectEvent" id="_5_oEAD2-EeSXR7i73X4dkA" name="Details">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_BShp4D2_EeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0">
             <parameterBindingGroup id="_EfIIwD2_EeSXR7i73X4dkA">
-              <parameterBindings id="_EOuEMD8-EeSmtIfOU-uKuQ" sourceParameter="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@parameters.0" targetParameter="#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@parameters.0"/>
+              <parameterBindings id="_O3rsMENKEeSgQ7fed9G_XQ" sourceParameter="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@parameters.0" targetParameter="#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@parameters.0"/>
             </parameterBindingGroup>
           </outInteractionFlows>
         </viewElementEvents>
         <viewElementEvents xsi:type="mobile:LongPressEvent" id="_H0E14D3AEeSXR7i73X4dkA" name="Long Press Event">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_i4b0ED3AEeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0">
-            <parameterBindingGroup id="_0B098D3AEeSXR7i73X4dkA"/>
+            <parameterBindingGroup id="_0B098D3AEeSXR7i73X4dkA">
+              <parameterBindings id="_WqjyoENKEeSgQ7fed9G_XQ" sourceParameter="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@parameters.0" targetParameter="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
           </outInteractionFlows>
         </viewElementEvents>
-        <viewComponentParts xsi:type="core:DataBinding" id="_2KiJID27EeSXR7i73X4dkA" name="Movie" domainConcept="#//@domainModel/@domainElements.0"/>
-        <viewComponentParts xsi:type="core:VisualizationAttribute" id="_EpiJUD28EeSXR7i73X4dkA" name="Title"/>
-        <viewComponentParts xsi:type="core:VisualizationAttribute" id="_b-ru4D89EeSmtIfOU-uKuQ" name="Year"/>
-        <viewComponentParts xsi:type="core:VisualizationAttribute" id="_m18MUD89EeSmtIfOU-uKuQ" name="Thumbnail" featureConcept="#//@domainModel/@domainElements.3"/>
-        <viewComponentParts xsi:type="core:VisualizationAttribute" id="_qG0uQD89EeSmtIfOU-uKuQ" name="Length" featureConcept="#//@domainModel/@domainElements.4"/>
+        <viewComponentParts xsi:type="core:DataBinding" id="_2KiJID27EeSXR7i73X4dkA" name="Movie" domainConcept="#//@domainModel/@domainElements.0">
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_EpiJUD28EeSXR7i73X4dkA" name="title" featureConcept="#//@domainModel/@domainElements.1"/>
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_dBC_cEHdEeSG94Ji8sYRew" name="thumbnail" featureConcept="#//@domainModel/@domainElements.3"/>
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_9X0ScEHdEeSG94Ji8sYRew" name="year" featureConcept="#//@domainModel/@domainElements.2"/>
+        </viewComponentParts>
       </viewElements>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="mobile:Screen" id="_zVEicD28EeSXR7i73X4dkA" name="AddMovie">
+    <interactionFlowModelElements xsi:type="mobile:Screen" id="_zVEicD28EeSXR7i73X4dkA" name="Add movie">
       <viewElements xsi:type="ext:Form" id="_-LboAD28EeSXR7i73X4dkA" name="AddMovieForm" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_AyPSMD29EeSXR7i73X4dkA" name="Save">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_oGVjsD29EeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.2"/>
         </viewElementEvents>
-        <viewComponentParts xsi:type="ext:SimpleField" id="_lYHfQD9EEeSmtIfOU-uKuQ" name="Title" type="uml:PrimitiveType model.uml#_VK2hkJ6QEeGdnpRmAZh-dQ"/>
-        <viewComponentParts xsi:type="ext:SimpleField" id="_ugoi8D9EEeSmtIfOU-uKuQ" name="Year" type="uml:PrimitiveType model.uml#_YGTmEJ6QEeGdnpRmAZh-dQ"/>
-        <viewComponentParts xsi:type="ext:SimpleField" id="_zN6xcD9EEeSmtIfOU-uKuQ" name="Thumbnail" type="uml:DataType model.uml#_1738sD2oEeSZIL_MSOPvYg"/>
-        <viewComponentParts xsi:type="ext:SimpleField" id="_Pg5e4D9FEeSmtIfOU-uKuQ" name="Length" type="uml:PrimitiveType model.uml#_YGTmEJ6QEeGdnpRmAZh-dQ"/>
+        <viewComponentParts xsi:type="core:DataBinding" id="_-RRbQEHjEeSG94Ji8sYRew" name="Movie" domainConcept="#//@domainModel/@domainElements.0"/>
+        <viewComponentParts xsi:type="ext:SimpleField" id="_BkGtQEJNEeS6CZpGj-FiSw" name="thumbnail" type="uml:DataType model.uml#_1738sD2oEeSZIL_MSOPvYg"/>
+        <viewComponentParts xsi:type="ext:SimpleField" id="_I552IEJNEeS6CZpGj-FiSw" name="title" type="uml:PrimitiveType model.uml#_VK2hkJ6QEeGdnpRmAZh-dQ"/>
+        <viewComponentParts xsi:type="ext:SelectionField" id="_PdTRsEJNEeS6CZpGj-FiSw" name="genre" type="uml:Class model.uml#_iCfiAD2pEeSZIL_MSOPvYg"/>
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:IFMLAction" id="_dkf8oD29EeSXR7i73X4dkA" name="Create Movie" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
       <outInteractionFlows xsi:type="core:NavigationFlow" id="_sPX1oD29EeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.0"/>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="mobile:Screen" id="_ibFboD2-EeSXR7i73X4dkA" name="MovieDetail">
+    <interactionFlowModelElements xsi:type="mobile:Screen" id="_ibFboD2-EeSXR7i73X4dkA" name="Movie detail">
       <viewElements xsi:type="ext:Details" id="_1UM2sD2-EeSXR7i73X4dkA" name="MovieDetails" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
-        <parameters id="_3nO_QD89EeSmtIfOU-uKuQ" name="myMovie" type="uml:Class model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
+        <parameters id="_JchrEENKEeSgQ7fed9G_XQ" name="MovieDetails" type="uml:Class model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
         <viewElementEvents xsi:type="mobile:TapEvent" id="_RKV3ID2_EeSXR7i73X4dkA" name="Home">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_rumY8D2_EeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_rumY8D2_EeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
         </viewElementEvents>
-        <viewComponentParts xsi:type="core:DataBinding" id="_lyvbMD9DEeSmtIfOU-uKuQ" name="Movie" domainConcept="#//@domainModel/@domainElements.0"/>
-        <viewComponentParts xsi:type="core:VisualizationAttribute" id="_qVemkD9DEeSmtIfOU-uKuQ" name="Title" featureConcept="#//@domainModel/@domainElements.1"/>
-        <viewComponentParts xsi:type="core:VisualizationAttribute" id="_tDhhMD9DEeSmtIfOU-uKuQ" name="Year" featureConcept="#//@domainModel/@domainElements.2"/>
+        <viewComponentParts xsi:type="core:DataBinding" id="_b_MSIEHjEeSG94Ji8sYRew" name="Movie" domainConcept="#//@domainModel/@domainElements.0">
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_dBC_cEHdEeSG94Ji8sYRew" name="thumbnail" featureConcept="#//@domainModel/@domainElements.3"/>
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_gKA7gEHdEeSG94Ji8sYRew" name="genre" featureConcept="#//@domainModel/@domainElements.5"/>
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_MMsCsEHjEeSG94Ji8sYRew" name="title" featureConcept="#//@domainModel/@domainElements.1"/>
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_9X0ScEHdEeSG94Ji8sYRew" name="year" featureConcept="#//@domainModel/@domainElements.2"/>
+        </viewComponentParts>
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="mobile:Screen" id="_Lv6ZUD3AEeSXR7i73X4dkA" name="Options" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.7/@outInteractionFlows.0">
       <viewElements xsi:type="ext:Details" id="_R2OQQD3AEeSXR7i73X4dkA" name="MovieDetails" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0">
+        <parameters id="_HhRUwENJEeSgQ7fed9G_XQ" name="movie" type="uml:Class model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
         <viewElementEvents xsi:type="mobile:TapEvent" id="_ZafdgD3BEeSXR7i73X4dkA" name="Delete">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_inTyYD3BEeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.5"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_inTyYD3BEeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.5">
+            <parameterBindingGroup id="_oLB_wENKEeSgQ7fed9G_XQ">
+              <parameterBindings id="_p817oENKEeSgQ7fed9G_XQ" sourceParameter="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@parameters.0" targetParameter="#//@interactionFlowModel/@interactionFlowModelElements.5/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </viewElementEvents>
-        <viewElementEvents xsi:type="mobile:TapEvent" id="_dow_UD3CEeSXR7i73X4dkA" name="Modify">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_4wdlYD3CEeSXR7i73X4dkA"/>
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_mplRsD9FEeSmtIfOU-uKuQ" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.6/@viewElements.0"/>
+        <viewElementEvents xsi:type="mobile:TapEvent" id="_dow_UD3CEeSXR7i73X4dkA" name="Edit">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_4wdlYD3CEeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.6/@viewElements.0">
+            <parameterBindingGroup id="_61YqgD3CEeSXR7i73X4dkA">
+              <parameterBindings id="_-DE8AENIEeSgQ7fed9G_XQ" sourceParameter="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@parameters.0" targetParameter="#//@interactionFlowModel/@interactionFlowModelElements.6/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </viewElementEvents>
-        <viewElementEvents xsi:type="mobile:TapEvent" id="_X80TsD3DEeSXR7i73X4dkA" name="Home">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Jebi0D5YEeSy3O1ngCIlMg" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        <viewElementEvents id="_LSWJsEP5EeSCkI9V_9oI8A" name="Home">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_NGGmUEP5EeSCkI9V_9oI8A" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
         </viewElementEvents>
+        <viewComponentParts xsi:type="core:DataBinding" id="_hdS5kEHjEeSG94Ji8sYRew" name="movie" domainConcept="#//@domainModel/@domainElements.0">
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_RFgLwEHjEeSG94Ji8sYRew" name="title" featureConcept="#//@domainModel/@domainElements.1"/>
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_gKA7gEHdEeSG94Ji8sYRew" name="genre" featureConcept="#//@domainModel/@domainElements.5"/>
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_9X0ScEHdEeSG94Ji8sYRew" name="year" featureConcept="#//@domainModel/@domainElements.2"/>
+          <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_dBC_cEHdEeSG94Ji8sYRew" name="thumbnail" featureConcept="#//@domainModel/@domainElements.3"/>
+        </viewComponentParts>
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:IFMLAction" id="_c1jPID3BEeSXR7i73X4dkA" name="Delete Movie" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <parameters id="_em3h4ENKEeSgQ7fed9G_XQ" name="MovieToDelete" type="uml:Class model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
       <outInteractionFlows xsi:type="core:NavigationFlow" id="_iilZQD5XEeSy3O1ngCIlMg" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.0"/>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="mobile:Screen" id="_j5Ft4D3CEeSXR7i73X4dkA" name="EditMovie">
-      <viewElements xsi:type="ext:Form" id="_qKT0UD3CEeSXR7i73X4dkA" name="ModifyMovieForm" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.1">
-        <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_I4nUsD3DEeSXR7i73X4dkA" name="Save mofication">
+    <interactionFlowModelElements xsi:type="mobile:Screen" id="_j5Ft4D3CEeSXR7i73X4dkA" name="Edit movie">
+      <viewElements xsi:type="ext:Form" id="_qKT0UD3CEeSXR7i73X4dkA" name="ModifyMovieForm" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <parameters id="_yJcmIENJEeSgQ7fed9G_XQ" name="movieToEdit" type="uml:Class model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
+        <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_I4nUsD3DEeSXR7i73X4dkA" name="Save">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_RbNA0D3DEeSXR7i73X4dkA" targetInteractionFlowElement="#//@interactionFlowModel/@interactionFlowModelElements.7"/>
         </viewElementEvents>
+        <viewComponentParts xsi:type="core:DataBinding" id="_-RRbQEHjEeSG94Ji8sYRew" name="Movie" domainConcept="#//@domainModel/@domainElements.0"/>
+        <viewComponentParts xsi:type="ext:SimpleField" id="_YGzjoENJEeSgQ7fed9G_XQ" name="thumbnail" type="uml:DataType model.uml#_1738sD2oEeSZIL_MSOPvYg"/>
+        <viewComponentParts xsi:type="ext:SimpleField" id="_i5MIIENJEeSgQ7fed9G_XQ" name="title" type="uml:PrimitiveType model.uml#_VK2hkJ6QEeGdnpRmAZh-dQ"/>
+        <viewComponentParts xsi:type="ext:SelectionField" id="_mzqZoENJEeSgQ7fed9G_XQ" name="genre" type="uml:Class model.uml#_iCfiAD2pEeSZIL_MSOPvYg"/>
+        <viewComponentParts xsi:type="ext:SimpleField" id="_rJqwkENJEeSgQ7fed9G_XQ" name="year" type="uml:PrimitiveType model.uml#_YGTmEJ6QEeGdnpRmAZh-dQ"/>
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:IFMLAction" id="_BigCwD3DEeSXR7i73X4dkA" name="Update Movie" inInteractionFlows="#//@interactionFlowModel/@interactionFlowModelElements.6/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
@@ -80,13 +106,13 @@
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_5lSOMT26EeSXR7i73X4dkA">
-    <domainElements xsi:type="core:UMLDomainConcept" id="_5lVRgD26EeSXR7i73X4dkA" name="Movie" classifier="uml:Class models/model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lV4kD26EeSXR7i73X4dkA" name="title" visualizationAttribute="#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewComponentParts.1" structuralFeature="uml:Property models/model.uml#_jEpi8J6QEeGdnpRmAZh-dQ"/>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lV4kT26EeSXR7i73X4dkA" name="year" visualizationAttribute="#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewComponentParts.2" structuralFeature="uml:Property models/model.uml#_jm9l0J6QEeGdnpRmAZh-dQ"/>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lV4kj26EeSXR7i73X4dkA" name="thumbnail" visualizationAttribute="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewComponentParts.3" structuralFeature="uml:Property models/model.uml#_9vb_oD2oEeSZIL_MSOPvYg"/>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lV4kz26EeSXR7i73X4dkA" name="length" visualizationAttribute="#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewComponentParts.4" structuralFeature="uml:Property models/model.uml#_JiRUgD2pEeSZIL_MSOPvYg"/>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lWfoD26EeSXR7i73X4dkA" name="genres" structuralFeature="uml:Property models/model.uml#_1CPJgD2pEeSZIL_MSOPvYg"/>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_5lWfoT26EeSXR7i73X4dkA" name="Genre" classifier="uml:Class models/model.uml#_iCfiAD2pEeSZIL_MSOPvYg"/>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lWfoj26EeSXR7i73X4dkA" name="name" structuralFeature="uml:Property models/model.uml#_mhy-4D2pEeSZIL_MSOPvYg"/>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_5lVRgD26EeSXR7i73X4dkA" name="Movie" classifier="uml:Class model.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lV4kD26EeSXR7i73X4dkA" name="title" visualizationAttribute="#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0" structuralFeature="uml:Property model.uml#_jEpi8J6QEeGdnpRmAZh-dQ"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lV4kT26EeSXR7i73X4dkA" name="year" structuralFeature="uml:Property model.uml#_jm9l0J6QEeGdnpRmAZh-dQ"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lV4kj26EeSXR7i73X4dkA" name="thumbnail" structuralFeature="uml:Property model.uml#_9vb_oD2oEeSZIL_MSOPvYg"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lV4kz26EeSXR7i73X4dkA" name="length" structuralFeature="uml:Property model.uml#_JiRUgD2pEeSZIL_MSOPvYg"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lWfoD26EeSXR7i73X4dkA" name="genre" structuralFeature="uml:Property model.uml#_1CPJgD2pEeSZIL_MSOPvYg"/>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_5lWfoT26EeSXR7i73X4dkA" name="Genre" classifier="uml:Class model.uml#_iCfiAD2pEeSZIL_MSOPvYg"/>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_5lWfoj26EeSXR7i73X4dkA" name="name" structuralFeature="uml:Property model.uml#_mhy-4D2pEeSZIL_MSOPvYg"/>
   </domainModel>
 </core:IFMLModel>
